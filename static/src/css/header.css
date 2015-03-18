@@ -1,0 +1,47 @@
+body {
+  overflow-x: hidden;
+}
+@media screen and (max-width: 1200px) {
+  .header {
+    width: 990px;
+  }
+  .nav-md {
+    width: 800px;
+  }
+  .nav-md ul li {
+    width: 80px;
+  }
+  .banner-main {
+    width: 990px;
+  }
+  .banner-main .banner-pannel .banner-cont {
+    margin-left: 490px;
+  }
+  .md-warp {
+    width: 990px;
+  }
+  .new-goods .goods-cont-item .md-warp-cont {
+    width: 800px;
+  }
+}
+.w990 .header {
+  width: 990px;
+}
+.w990 .nav-md {
+  width: 800px;
+}
+.w990 .nav-md ul li {
+  width: 80px;
+}
+.w990 .banner-main {
+  width: 990px;
+}
+.w990 .banner-main .banner-pannel .banner-cont {
+  margin-left: 490px;
+}
+.w990 .md-warp {
+  width: 990px;
+}
+.w990 .new-goods .goods-cont-item .md-warp-cont {
+  width: 800px;
+}
