@@ -172,6 +172,7 @@
     margin:0 auto;
     width: 1190px;
 }
+
 .floor-title{
     margin-top: 25px;
     float: left;
@@ -273,6 +274,85 @@
     }
 }
 
+.md-warp-sidebar{
+    float:left;
+    width:190px;
+    height:496px;
+    .warp-sidebar-bn{
+        float:left;
+        width:190px;
+        height:263px;
+    }
+    ul{
+        float:left;
+        li{
+            border-top: 1px solid #fffafa;
+            a{
+                display:inline-block;
+                width:190px;
+                height:65px;
+                line-height: 65px;
+                text-align: center;
+                font-size: 14px;
+                color:#666;
+                &:hover{
+                    color:#d11414;
+                }
+            }
+        }
+    }  
+}
+.md-warp-bn{
+    float:left;
+    width:400px;
+    height:526px;
+    a{
+        display:inline-block;
+        position:relative;
+        float:left;
+        width:399px;
+        height:263px;
+        border:1px solid #f5f5f5;
+        border-top: none;
+        border-right: none;
+        overflow:hidden;
+        font-family: \5FAE\8F6F\96C5\9ED1;
+    }
+    .md-warp-bn-info{
+        position:absolute;
+        top: 35px;
+        right:20px;
+        width:130px;
+        .bn-tit{
+            display:inline-block;
+            width:130px;
+            height:25px;
+            overflow:hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .bn-max-tit{
+            font-size: 18px;
+            color:#000;
+        }
+        .bn-min-tit{
+            font-size: 16px;
+            color:#999;
+        }
+        .bn-detail{
+            display:inline-block;
+            margin-top: 30px;
+            width:102px;
+            height:30px;
+            line-height: 30px;
+            font-size: 14px;
+            color:#fff;
+            text-indent: 10px;
+            background-color: rgba(153, 153, 153, 0.5);
+        }
+    }
+}
+
 .new-goods {
     .new-goods-tab {
         .goods-tab-item {
@@ -311,17 +391,27 @@
     }
 }
 
-
-
-
 .floor-md{
-    height: 526px;
+    height: 584px;
+    overflow:hidden;
+    .md-warp-cont{
+        width:600px;
+        height:526px;
+        overflow:hidden;
+        li{
+            border-bottom: 1px solid #f5f5f5;
+        }
+    }
 }
-
 
 .fashion{
     .floor-title{
         border-color: #fa8496;
+    }
+    .md-warp-sidebar{
+        ul{
+            background-color: #fff2f3;
+        }
     }
 }
 
@@ -329,11 +419,21 @@
     .floor-title{
         border-color: #cea057;
     }
+    .md-warp-sidebar{
+        ul{
+            background-color: #fff7ee;
+        }
+    }
 }
 
 .infant-mom{
     .floor-title{
         border-color: #8790c1;
+    }
+    .md-warp-sidebar{
+        ul{
+            background-color: #f0f2fc;
+        }
     }
 }
 

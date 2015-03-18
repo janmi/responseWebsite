@@ -264,6 +264,84 @@
   color: #b4b4b4;
   text-decoration: line-through;
 }
+.md-warp-sidebar {
+  float: left;
+  width: 190px;
+  height: 496px;
+}
+.md-warp-sidebar .warp-sidebar-bn {
+  float: left;
+  width: 190px;
+  height: 263px;
+}
+.md-warp-sidebar ul {
+  float: left;
+}
+.md-warp-sidebar ul li {
+  border-top: 1px solid #fffafa;
+}
+.md-warp-sidebar ul li a {
+  display: inline-block;
+  width: 190px;
+  height: 65px;
+  line-height: 65px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+.md-warp-sidebar ul li a:hover {
+  color: #d11414;
+}
+.md-warp-bn {
+  float: left;
+  width: 400px;
+  height: 526px;
+}
+.md-warp-bn a {
+  display: inline-block;
+  position: relative;
+  float: left;
+  width: 399px;
+  height: 263px;
+  border: 1px solid #f5f5f5;
+  border-top: none;
+  border-right: none;
+  overflow: hidden;
+  font-family: \5FAE\8F6F\96C5\9ED1;
+}
+.md-warp-bn .md-warp-bn-info {
+  position: absolute;
+  top: 35px;
+  right: 20px;
+  width: 130px;
+}
+.md-warp-bn .md-warp-bn-info .bn-tit {
+  display: inline-block;
+  width: 130px;
+  height: 25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.md-warp-bn .md-warp-bn-info .bn-max-tit {
+  font-size: 18px;
+  color: #000;
+}
+.md-warp-bn .md-warp-bn-info .bn-min-tit {
+  font-size: 16px;
+  color: #999;
+}
+.md-warp-bn .md-warp-bn-info .bn-detail {
+  display: inline-block;
+  margin-top: 30px;
+  width: 102px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #fff;
+  text-indent: 10px;
+  background-color: rgba(153, 153, 153, 0.5);
+}
 .new-goods .new-goods-tab .goods-tab-item {
   position: relative;
   display: inline-block;
@@ -298,16 +376,34 @@
   width: 1000px;
 }
 .floor-md {
+  height: 584px;
+  overflow: hidden;
+}
+.floor-md .md-warp-cont {
+  width: 600px;
   height: 526px;
+  overflow: hidden;
+}
+.floor-md .md-warp-cont li {
+  border-bottom: 1px solid #f5f5f5;
 }
 .fashion .floor-title {
   border-color: #fa8496;
 }
+.fashion .md-warp-sidebar ul {
+  background-color: #fff2f3;
+}
 .life .floor-title {
   border-color: #cea057;
 }
+.life .md-warp-sidebar ul {
+  background-color: #fff7ee;
+}
 .infant-mom .floor-title {
   border-color: #8790c1;
+}
+.infant-mom .md-warp-sidebar ul {
+  background-color: #f0f2fc;
 }
 .streamer {
   margin: 25px auto;
