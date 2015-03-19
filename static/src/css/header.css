@@ -17,6 +17,9 @@ body {
   .banner-main .banner-pannel .banner-cont {
     margin-left: 490px;
   }
+  .sider {
+    _margin-left: -990px;
+  }
   .md-warp {
     width: 990px;
   }
@@ -41,6 +44,9 @@ body {
 }
 .w990 .banner-main .banner-pannel .banner-cont {
   margin-left: 490px;
+}
+.w990 .sider {
+  _margin-left: -990px;
 }
 .w990 .md-warp {
   width: 990px;
