@@ -29,6 +29,12 @@ body {
   .floor-md .md-warp-cont {
     width: 400px;
   }
+  .expert-save {
+    width: 590px;
+  }
+  .expert-save .save-cont-item li {
+    width: 295px;
+  }
 }
 .w990 .header {
   width: 990px;
@@ -56,4 +62,10 @@ body {
 }
 .w990 .floor-md .md-warp-cont {
   width: 400px;
+}
+.w990 .expert-save {
+  width: 590px;
+}
+.w990 .expert-save .save-cont-item li {
+  width: 295px;
 }
