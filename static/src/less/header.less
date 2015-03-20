@@ -1,36 +1,58 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url('http://at.alicdn.com/t/font_1426845336_2816284.eot'); /* IE9*/
+  src: url('http://at.alicdn.com/t/font_1426845336_2816284.eot?#iefix') format('embedded-opentype'), 
+  url('http://at.alicdn.com/t/font_1426845336_2816284.woff') format('woff'), 
+  url('http://at.alicdn.com/t/font_1426845336_2816284.ttf') format('truetype'), 
+  url('http://at.alicdn.com/t/font_1426845336_2816284.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+    
+
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 body{overflow-x: hidden;}
+
 #respond{
     .w990(){
-        .header{
+
+        .header,.md-warp{
             width: 990px;
         }
+
         .nav-md{
             width: 800px;
            ul li{
                 width: 80px;
             }
         }
+
         .banner-main{
             width: 990px;
-           .banner-pannel .banner-cont{
-                margin-left: 490px;
-            }
+
+           .banner-pannel .banner-cont{ margin-left: 490px; }
         }
+
         .sider{_margin-left: -990px;}
-        .md-warp{
-            width: 990px;
-        }
-        .new-goods .goods-cont-item .md-warp-cont{
-            width: 800px;
-        }
-        .floor-md .md-warp-cont{
-            width:400px;
-        }
+
+        .new-goods .goods-cont-item .md-warp-cont{ width: 800px; }
+
+        .floor-md .md-warp-cont{ width:400px; }
+
         .expert-save{
             width: 590px;
-            .save-cont-item li{
-                width: 295px;
-            }
+
+            .save-cont-item li{ width: 295px; }
+        }
+
+        .f-strength .f-strength-item{
+            padding: 10px 0 0;
+            width:150px;
         }
     }
 }
