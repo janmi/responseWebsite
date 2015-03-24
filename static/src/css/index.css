@@ -384,6 +384,16 @@
   position: absolute;
   top: 25px;
   left: 29px;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  overflow: hidden;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  border-color: transparent transparent #d11414 transparent;
+  border-style: dashed dashed solid dashed;
+  border-width: 0 5px 6px 5px;
 }
 .new-goods .new-goods-tab span {
   display: inline-block;
@@ -481,6 +491,16 @@
   position: absolute;
   top: 25px;
   left: 20px;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  overflow: hidden;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  border-color: transparent transparent #d11414 transparent;
+  border-style: dashed dashed solid dashed;
+  border-width: 0 5px 6px 5px;
 }
 .expert-save-tab span {
   display: inline-block;
