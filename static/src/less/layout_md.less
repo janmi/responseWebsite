@@ -15,22 +15,32 @@
             overflow: hidden;
 
             .more {
+                margin-right: 5px;
                 float: right;
                 font-size: 12px;
                 color: #999;
 
                 b {
                     display: inline-block;
-                    margin-left: 3px;
+                    margin-left: 5px;
                     color: #999;
                     font-size: 15px;
                     font-weight: normal;
+                    -webkit-transition: -webkit-transform .2s linear;
+                       -moz-transition: -moz-transform .2s linear;
+                         -o-transition: -o-transform .2s linear;
+                            transition: transform .2s linear;
                 }
                 &:hover {
                     color: #d11414;
 
                     b {
                         color: #d11414;
+                        -webkit-transform:scale(1.4);
+                           -moz-transform:scale(1.4);
+                            -ms-transform:scale(1.4);
+                             -o-transform:scale(1.4);
+                                transform:scale(1.4);
                     }
                 }
             }
@@ -176,6 +186,21 @@
                 border-right: none;
                 overflow: hidden;
                 font-family: \5FAE\8F6F\96C5\9ED1;
+                img{
+                    margin-left: -5px;
+                    -webkit-transition: -webkit-transform .2s linear;
+                       -moz-transition: -moz-transform .2s linear;
+                         -o-transition: -o-transform .2s linear;
+                            transition: transform .2s linear;
+
+                    &:hover{
+                        -webkit-transform: translateX(5px);
+                           -moz-transform: translateX(5px);
+                            -ms-transform: translateX(5px);
+                             -o-transform: translateX(5px);
+                                transform: translateX(5px);
+                    }
+                }
             }
             .md-warp-bn-info {
                 position: absolute;
@@ -222,8 +247,6 @@
         }
     }
 }
-
-
 
 
 
