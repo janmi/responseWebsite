@@ -164,7 +164,19 @@
   top: -36px;
   width: 190px;
   height: 36px;
+  line-height: 36px;
   background-color: #970b0b;
+  color: #fff;
+  font-size: 16px;
+  font-family: \5FAE\8F6F\96C5\9ED1;
+  font-weight: normal;
+}
+.sider .sider-title .iconfont {
+  float: left;
+  display: inline-block;
+  margin-left: 38px;
+  margin-right: 10px;
+  font-size: 16px;
 }
 .small-banner {
   float: left;
@@ -311,6 +323,12 @@
 .md-warp-sidebar ul li a:hover {
   color: #d11414;
 }
+.md-warp-sidebar ul li b {
+  margin-right: 5px;
+  display: inline-block;
+  font-weight: normal;
+  color: #555;
+}
 .md-warp-bn {
   float: left;
   width: 400px;
@@ -434,17 +452,26 @@
 .fashion .floor-title {
   border-color: #fa8496;
 }
+.fashion .floor-title .title-item-icon {
+  background-position: -1px -151px;
+}
 .fashion .md-warp-sidebar ul {
   background-color: #fff2f3;
 }
 .life .floor-title {
   border-color: #cea057;
 }
+.life .floor-title .title-item-icon {
+  background-position: -73px -151px;
+}
 .life .md-warp-sidebar ul {
   background-color: #fff7ee;
 }
 .infant-mom .floor-title {
   border-color: #8790c1;
+}
+.infant-mom .floor-title .title-item-icon {
+  background-position: -145px -152px;
 }
 .infant-mom .md-warp-sidebar ul {
   background-color: #f0f2fc;
