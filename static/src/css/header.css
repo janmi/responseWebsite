@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'iconfont';
-  src: url('//at.alicdn.com/t/font_1427162011_4093766.eot');
-  src: url('//at.alicdn.com/t/font_1427162011_4093766.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('//at.alicdn.com/t/font_1427162011_4093766.woff') format('woff'), /* chrome、firefox */ url('//at.alicdn.com/t/font_1427162011_4093766.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('//at.alicdn.com/t/font_1427162011_4093766.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_1428568850_104039.eot');
+  src: url('//at.alicdn.com/t/font_1428568850_104039.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('//at.alicdn.com/t/font_1428568850_104039.woff') format('woff'), /* chrome、firefox */ url('//at.alicdn.com/t/font_1428568850_104039.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('//at.alicdn.com/t/font_1428568850_104039.svg#iconfont') format('svg');
   
   /* IE9*/
   /* iOS 4.1- */
@@ -16,6 +16,71 @@
 }
 body {
   overflow-x: hidden;
+}
+.top {
+  width: 100%;
+  height: 27px;
+  line-height: 27px;
+  border-bottom: 1px solid #ddd;
+  font-size: 12px;
+  color: #666;
+}
+.top-md {
+  width: 1190px;
+  margin: 0 auto;
+}
+.top-r-nav {
+  float: right;
+}
+.top-l-nav {
+  float: left;
+}
+.top-l-nav a {
+  display: inline-block;
+}
+.top-l-nav .n-login {
+  display: none;
+}
+.top-l-nav .n-login .qq-icon {
+  display: inline-block;
+  font-size: 20px;
+  color: #666;
+}
+.top-l-nav .n-login .login-init {
+  width: 40px;
+  height: 25px;
+  text-align: center;
+}
+.top-l-nav .n-login .login-init:before,
+.top-l-nav .n-login .login-init:after {
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  width: 1px;
+  height: 13px;
+  content: '';
+  background-color: #d7d7de;
+}
+.top-l-nav .n-login .login-init:before {
+  left: -6px;
+}
+.top-l-nav .n-login .login-init:after {
+  right: -6px;
+}
+.top-l-nav .y-login a {
+  margin: 0 5px;
+}
+.top-l-nav .y-login span {
+  float: left;
+}
+.top-l-nav .y-login .user-name {
+  float: left;
+  margin-right: 5px;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #0072c1;
 }
 @media screen and (max-width: 1200px) {
   .header,
