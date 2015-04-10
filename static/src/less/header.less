@@ -1,10 +1,11 @@
+@import "common/module.less";
 @font-face {
   font-family: 'iconfont';
-  src: url('//at.alicdn.com/t/font_1428568850_104039.eot'); /* IE9*/
-  src: url('//at.alicdn.com/t/font_1428568850_104039.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('//at.alicdn.com/t/font_1428568850_104039.woff') format('woff'), /* chrome、firefox */
-  url('//at.alicdn.com/t/font_1428568850_104039.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url('//at.alicdn.com/t/font_1428568850_104039.svg#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('//at.alicdn.com/t/font_1428628859_7490587.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/font_1428628859_7490587.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/font_1428628859_7490587.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/font_1428628859_7490587.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/font_1428628859_7490587.svg#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont{
@@ -28,9 +29,6 @@ body{overflow-x: hidden;}
       width:1190px;
       margin: 0 auto;
     }
-}
-.top-r-nav{
-  float:right;
 }
 
 .top-l-nav{
@@ -81,6 +79,95 @@ body{overflow-x: hidden;}
       text-overflow:ellipsis;
       white-space: nowrap;
       color:#0072c1;
+    }
+  }
+}
+.top-r-nav{
+  float:right;
+  li{
+    float:left;
+    margin-right: 15px;
+    .p-triangle{
+      .triangle-bottom(9, 5, #666);
+    }
+  }
+  .n-float-box{
+        position:relative;
+        .n-cont{
+          position:absolute;
+          top:27px;
+          border:1px solid #e4e4e4;
+          background-color: #f2f2f2;
+          a{
+            display:block;
+          }
+          .n-triangle{
+            position:relative;
+            i{
+                position: absolute;
+                top: -7px;
+                left: -7px;
+               .triangle-top(11, 7, #e4e4e4);
+            }
+            b{
+                position: absolute;
+                top: -6px;
+                left: -6px;
+               .triangle-top(9, 6, #f2f2f2);
+            }
+          }
+        }
+  }
+  .attention{
+    .n-cont{
+      display:none;
+      left:-30px;
+      width:110px;
+      text-align: center;
+      .sina{
+        border-bottom:1px solid #e4e4e4;
+        text-align: left;
+        text-indent: 11px;
+      }
+      .iconfont{
+        font-size: 16px;
+        margin-right: 3px;
+      }
+      .weixin-code{
+        width:110px;
+        height: 100px;
+        border-top:1px solid #e4e4e4;
+        span{
+          display:inline-block;
+          width:100px;
+          height:100px;
+          background-position: -294px -205px;
+        } 
+      }
+    }
+  }
+  .n-site-map{
+    .n-cont{
+      left:-190px;
+      padding:5px 10px; 
+      width:245px;
+      .n-triangle{
+        i{
+          top: -12px;
+          left: 210px;
+        }
+        b{
+          top: -11px;
+          left: 211px;
+        }
+      }
+      dt{
+        font-weight: bold;
+      }
+      dd{
+        border-bottom: 1px solid #dfdcdc;
+        a{display:inline-block;}
+      }
     }
   }
 }
