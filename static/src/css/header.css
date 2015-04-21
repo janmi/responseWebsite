@@ -170,6 +170,7 @@ body {
   background-position: -294px -205px;
 }
 .top-r-nav .n-site-map .n-cont {
+  display: none;
   left: -190px;
   padding: 5px 10px;
   width: 245px;
@@ -189,6 +190,9 @@ body {
   border-bottom: 1px solid #dfdcdc;
 }
 .top-r-nav .n-site-map .n-cont dd a {
+  display: inline-block;
+}
+.top-r-nav .n-float-box .n-cont-cur {
   display: inline-block;
 }
 .r-sidebar-md {
