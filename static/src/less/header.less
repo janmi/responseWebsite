@@ -1,4 +1,6 @@
 @import "common/module.less";
+@import "animation.less";
+
 @font-face {
   font-family: 'iconfont';
   src: url('//at.alicdn.com/t/font_1428890355_2089026.eot'); /* IE9*/
@@ -199,12 +201,12 @@ body{overflow-x: hidden;}
     margin-top: -200px;
     height:400px;
     li{
-      border:1px solid #383838;
+      position: relative;
       border-left: 0;
       border-right: 0;
-      margin-bottom: -1px;
       a{
         display:inline-block;
+        margin: 5px 0;
         padding:5px 0;
         width:40px;
         color:#fff;
@@ -213,6 +215,33 @@ body{overflow-x: hidden;}
         &:hover{
           background-color:#d11414;
         }
+      }
+      .tab-cur{
+        background-color:#d11414;
+      }
+      .tab-item{
+        position: absolute;
+        left:-140px;
+        top: 5px;
+        display:none;
+        cursor: pointer;
+        .tab-triangle{
+          float: left;
+          margin-left: 90px;
+          margin-top: -27px;
+          .triangle-right(7,14,#666);
+        }
+      }
+      .tab-item-cont{
+        padding:11px 0;
+        width: 90px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background-color: #666;
+        color:#fff;
+        font-family: \5fae\8f6f\96c5\9ed1;
+        text-align: center;
+        box-shadow: -1px 1px 3px #999;
       }
       .go-top{
         font-size: 14px;
@@ -258,7 +287,10 @@ body{overflow-x: hidden;}
    } 
   }
 }
-
+ 
+.ie .r-side-cont li .tab-item{
+  left: -90px;
+}
 
 #respond{
     .w990(){

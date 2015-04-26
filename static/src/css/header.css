@@ -219,13 +219,13 @@ body {
   height: 400px;
 }
 .r-side-box .r-side-cont li {
-  border: 1px solid #383838;
+  position: relative;
   border-left: 0;
   border-right: 0;
-  margin-bottom: -1px;
 }
 .r-side-box .r-side-cont li a {
   display: inline-block;
+  margin: 5px 0;
   padding: 5px 0;
   width: 40px;
   color: #fff;
@@ -234,6 +234,42 @@ body {
 }
 .r-side-box .r-side-cont li a:hover {
   background-color: #d11414;
+}
+.r-side-box .r-side-cont li .tab-cur {
+  background-color: #d11414;
+}
+.r-side-box .r-side-cont li .tab-item {
+  position: absolute;
+  left: -140px;
+  top: 5px;
+  display: none;
+  cursor: pointer;
+}
+.r-side-box .r-side-cont li .tab-item .tab-triangle {
+  float: left;
+  margin-left: 90px;
+  margin-top: -27px;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  overflow: hidden;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  border-color: transparent transparent transparent #666666;
+  border-style: dashed dashed dashed solid;
+  border-width: 7px 0 7px 7px;
+}
+.r-side-box .r-side-cont li .tab-item-cont {
+  padding: 11px 0;
+  width: 90px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #666;
+  color: #fff;
+  font-family: \5fae\8f6f\96c5\9ed1;
+  text-align: center;
+  box-shadow: -1px 1px 3px #999999;
 }
 .r-side-box .r-side-cont li .go-top {
   font-size: 14px;
@@ -284,6 +320,9 @@ body {
   color: #fff;
   text-align: center;
   box-shadow: 1px 1px 1px #888 inset;
+}
+.ie .r-side-cont li .tab-item {
+  left: -90px;
 }
 @media screen and (max-width: 1200px) {
   .header,

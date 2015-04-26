@@ -1,6 +1,7 @@
 @charset 'utf-8';
 @import "common/module.less";
 @import "layout_md.less";
+@import "animation.less";
 
 .sprite {
     background: url(/static/src/img/sprite.png) no-repeat;
@@ -122,12 +123,7 @@
             height: 38px;
             overflow:hidden;
             background-position: 0 -71px;
-            -webkit-transition-property: background-position;
-            -webkit-transition-duration:.1s;
-            -webkit-transition-timing-function: linear;
-            transition-property: background-position;
-            transition-duration:.1s;
-            transition-timing-function: linear;
+            .bp;
         }
         .zs-tit{
             width: 130px;
