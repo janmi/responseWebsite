@@ -259,17 +259,18 @@
     .sider-type-second{
         position:absolute;
         top: 0;
-        left:190px;
+        left:190px; 
         height:337px;
         overflow:hidden;
         padding:3px 22px 0;
-        background-color: #000;
+        background-color: #000;  
         opacity: .8;
         filter: alpha(opacity=80);
         a{
             display:inline-block;
             line-height: 28px;
             margin-right: 15px;
+            font-family: \5FAE\8F6F\96C5\9ED1;
             color:#fff;
             white-space: nowrap;
         }
@@ -280,7 +281,74 @@
     margin-left: -200px;
     width: 200px;
     height: 340px;
-    background-color: blue;
+    .small-panel{
+        position: relative;
+        height: 218px;
+        overflow: hidden;
+        background-color: #fff;
+        ul{
+            li{
+                width: 200px;
+                height: 218px;
+                float: left;
+                a{
+                    display:block;
+                }
+            }
+        }
+        .small-tab{
+            position: absolute;
+            bottom: 6px;
+            left:10px;
+            a{
+                display:inline-block;
+                margin-right: 3px;
+                width: 7px;
+                height: 7px;
+                border-radius: 100%;
+                background-color: #666;
+                &:hover{
+                    background-color: #d42424;
+                }
+            }
+            .cur{
+                background-color: #d42424;
+            }
+        }
+    }
+    .notice{
+        width: 200px;
+        height: 122px;
+        overflow: hidden;
+        font-family: \5FAE\8F6F\96C5\9ED1;
+        background-color: #fdf3f6;
+        &-tab{
+            width: 201px;
+            height:36px;
+            line-height: 36px;
+            border-top: 1px solid #e3e3e3;
+            background-color: #e3e3e3;
+            a{
+                display:inline-block;
+                float: left;
+                width: 67px;
+                text-align: center;
+                &:hover{
+                    background-color: #fdf3f6;
+                }
+            }
+            .cur{
+                background-color: #fdf3f6;
+            }
+        }
+        &-cont-item{
+            a{
+                display:inline-block;
+                padding-left:5px; 
+                line-height:28px;
+            }
+        }
+    }
 }
 .warp {
     padding-bottom: 110px;

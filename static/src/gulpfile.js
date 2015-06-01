@@ -6,7 +6,7 @@ var gulp    = require('gulp'),
 
 
     gulp.task('less',function() {
-        gulp.src('less/**/*.less')
+        gulp.src(['less/**/*.less', '!less/common/module.less'])
             .pipe(plumber())
             .pipe(less())
             .pipe(gulp.dest('css/'))
