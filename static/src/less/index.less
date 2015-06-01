@@ -203,7 +203,7 @@
     //fuck ie6, 解析到banner的宽度
     width: 190px;
     height: 340px;
-    background-color: #000;
+    background-color: #faf1f2;
 
     .sider-title {
         position: absolute;
@@ -223,6 +223,55 @@
             margin-left: 38px;
             margin-right: 10px;
             font-size: 16px;
+        }
+    }
+    .sider-type{
+        a{
+            padding-left: 40px;
+            display:block;
+            height:34px;
+            line-height: 34px;
+            font-size: 14px;
+            font-family: \5FAE\8F6F\96C5\9ED1;
+            color:#6c6666;
+            transition:padding-left .5s ease;
+            .iconfont{
+                margin-right: 10px;
+            }
+            &:hover{
+                color:#fff;
+                background-color: #731a1d;
+                padding-left: 45px;
+            }
+            .sider-triangle{
+                float:right;
+                margin-top: 13px;
+                margin-right: 10px;
+                display:inline-block;
+                width:0;
+                height:0;
+                border-color: transparent transparent transparent #faf1f2; 
+                border-width: 4px 4px 4px 4px;
+                border-style: dashed  dashed dashed solid;
+             }
+        }
+    }
+    .sider-type-second{
+        position:absolute;
+        top: 0;
+        left:190px;
+        height:337px;
+        overflow:hidden;
+        padding:3px 22px 0;
+        background-color: #000;
+        opacity: .8;
+        filter: alpha(opacity=80);
+        a{
+            display:inline-block;
+            line-height: 28px;
+            margin-right: 15px;
+            color:#fff;
+            white-space: nowrap;
         }
     }
 }
