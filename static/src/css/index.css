@@ -236,6 +236,11 @@
   margin-right: 10px;
   font-size: 16px;
 }
+.sider .sider-type {
+  position: relative;
+  z-index: 11;
+  background-color: #fff;
+}
 .sider .sider-type a {
   padding-left: 40px;
   display: block;
@@ -267,17 +272,26 @@
   border-style: dashed dashed dashed solid;
   font-size: 0;
 }
-.sider .sider-type-second {
+.sider .sider-type .sider-cur a {
+  color: #fff;
+  background-color: #731a1d;
+  padding-left: 45px;
+}
+.sider .sider-type-item {
   position: absolute;
   top: 0;
   left: 190px;
+  z-index: 10;
+  display: none;
+  width: 102px;
   height: 337px;
-  padding: 3px 22px 0;
+  padding: 3px 5px 0 12px;
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.8);
   filter: alpha(opacity=80);
+  transition: transform .7s ease;
 }
-.sider .sider-type-second a {
+.sider .sider-type-item a {
   display: inline-block;
   line-height: 28px;
   margin-right: 15px;
@@ -285,8 +299,12 @@
   color: #fff;
   white-space: nowrap;
 }
-.sider .sider-type-second a:hover {
+.sider .sider-type-item a:hover {
   text-decoration: underline;
+}
+.sider .sider-type-cur {
+  padding-left: 20px;
+  display: block;
 }
 .small-banner {
   position: relative;

@@ -19,6 +19,8 @@
     <script src="static/src/js/jquery-1.10.1.min.js"></script>
     <script src="static/src/js/index.js"></script>
     <script src="static/src/js/global.js"></script>
+    <script src="static/src/js/jquery.MenuNav.js"></script>
+
 </head>
 <body>
     <div class="top clearfix">
@@ -158,20 +160,20 @@
             </div>
             <div class="sider">
                 <h2 class="sider-title"><span class="iconfont">&#xe61a;</span>全部商品分类</h2>
-                <ul class="sider-type">
-                    <li><a href="#" title=""><span class="sider-triangle"></span><span class="iconfont">&#xe600;</span>潮流女装</a></li>
-                    <li><a href="#" title=""><span class="sider-triangle"></span><span class="iconfont">&#xe601;</span>精品男装</a></li>
-                    <li><a href="#" title=""><span class="sider-triangle"></span><span class="iconfont">&#xe602;</span>鞋子箱包</a></li>
-                    <li><a href="#" title=""><span class="sider-triangle"></span><span class="iconfont">&#xe605;</span>时尚佩饰</a></li>
-                    <li><a href="#" title=""><span class="sider-triangle"></span><span class="iconfont">&#xe606;</span>美食/特产</a></li>
-                    <li><a href="#" title=""><span class="sider-triangle"></span><span class="iconfont">&#xe604;</span>数码家电</a></li>
-                    <li><a href="#" title=""><span class="sider-triangle"></span><span class="iconfont">&#xe603;</span>家具日用</a></li>
-                    <li><a href="#" title=""><span class="sider-triangle"></span><span class="iconfont">&#xe607;</span>美容护肤</a></li>
-                    <li><a href="#" title=""><span class="sider-triangle"></span><span class="iconfont">&#xe608;</span>母婴用品</a></li>
-                    <li><a href="#" title=""><span class="sider-triangle"></span><span class="iconfont">&#xe609;</span>综合商品</a></li>
+                <ul class="J_menu sider-type">
+                    <li data-id="1"><a href="#" title=""><span class="sider-triangle"></span><span class="iconfont">&#xe600;</span>潮流女装</a></li>
+                    <li data-id="2"><a href="#" title=""><span class="sider-triangle"></span><span class="iconfont">&#xe601;</span>精品男装</a></li>
+                    <li data-id="3"><a href="#" title=""><span class="sider-triangle"></span><span class="iconfont">&#xe602;</span>鞋子箱包</a></li>
+                    <li data-id="4"><a href="#" title=""><span class="sider-triangle"></span><span class="iconfont">&#xe605;</span>时尚佩饰</a></li>
+                    <li data-id="5"><a href="#" title=""><span class="sider-triangle"></span><span class="iconfont">&#xe606;</span>美食/特产</a></li>
+                    <li data-id="6"><a href="#" title=""><span class="sider-triangle"></span><span class="iconfont">&#xe604;</span>数码家电</a></li>
+                    <li data-id="7"><a href="#" title=""><span class="sider-triangle"></span><span class="iconfont">&#xe603;</span>家具日用</a></li>
+                    <li data-id="8"><a href="#" title=""><span class="sider-triangle"></span><span class="iconfont">&#xe607;</span>美容护肤</a></li>
+                    <li data-id="9"><a href="#" title=""><span class="sider-triangle"></span><span class="iconfont">&#xe608;</span>母婴用品</a></li>
+                    <li data-id="10"><a href="#" title=""><span class="sider-triangle"></span><span class="iconfont">&#xe609;</span>综合商品</a></li>
                 </ul>
-                <div class="sider-type-second">
-                    <div class="type-item">
+                <div class="J_category sider-category">
+                    <div class="sider-type-item" data-id="1">
                         <a href="#" title="">上衣</a>
                         <a href="#" title="">女裤</a>
                         <a href="#" title="">外套</a>
@@ -180,6 +182,110 @@
                         <a href="#" title="">中年女装</a>
                         <a href="#" title="">户外服装</a>
                         <a href="#" title="">内衣</a>
+                        <a href="#" title="">其他</a>
+                    </div>
+                    <div class="sider-type-item" data-id="2">
+                        <a href="#" title="">上衣</a>
+                        <a href="#" title="">男袜</a>
+                        <a href="#" title="">外套</a>
+                        <a href="#" title="">男士内衣</a>
+                        <a href="#" title="">下装</a>
+                        <a href="#" title="">套装/礼服</a>
+                        <a href="#" title="">中年男装</a>
+                        <a href="#" title="">户外服装</a>
+                        <a href="#" title="">其他</a>
+                    </div>
+                    <div class="sider-type-item" data-id="3">
+                        <a href="#" title="">男鞋</a>
+                        <a href="#" title="">男包</a>
+                        <a href="#" title="">女鞋</a>
+                        <a href="#" title="">女包</a>
+                        <a href="#" title="">儿童背包</a>
+                        <a href="#" title="">钱包/卡包</a>
+                        <a href="#" title="">旅行箱包</a>
+                        <a href="#" title="">户外鞋类</a>
+                        <a href="#" title="">皮具配件</a>
+                        <a href="#" title="">居家拖鞋</a>
+                        <a href="#" title="">其他</a>
+                    </div>
+                    <div class="sider-type-item" data-id="4">
+                        <a href="#" title="">流行饰品</a>
+                        <a href="#" title="">珠宝首饰</a>
+                        <a href="#" title="">男女围巾</a>
+                        <a href="#" title="">品质手表</a>
+                        <a href="#" title="">眼镜配饰</a>
+                        <a href="#" title="">男人饰品</a>
+                        <a href="#" title="">帽子</a>
+                        <a href="#" title="">其他</a>
+                    </div>
+                    <div class="sider-type-item" data-id="5">
+                        <a href="#" title="">休闲零食</a>
+                        <a href="#" title="">零食特产</a>
+                        <a href="#" title="">进口食品</a>
+                        <a href="#" title="">地方特产</a>
+                        <a href="#" title="">生鲜果蔬</a>
+                        <a href="#" title="">粮油米面</a>
+                        <a href="#" title="">茶叶</a>
+                        <a href="#" title="">酒类</a>
+                        <a href="#" title="">私房菜</a>
+                        <a href="#" title="">生鲜熟食</a>
+                        <a href="#" title="">功能/营养</a>
+                        <a href="#" title="">传统/滋补</a>
+                        <a href="#" title="">其他</a>
+                    </div>
+                    <div class="sider-type-item" data-id="6">
+                        <a href="#" title="">电脑/平板</a>
+                        <a href="#" title="">相机</a>
+                        <a href="#" title="">手机</a>
+                        <a href="#" title="">生活电器</a>
+                        <a href="#" title="">厨房电器</a>
+                        <a href="#" title="">大家电</a>
+                        <a href="#" title="">手机/相机配件</a>
+                        <a href="#" title="">电脑外设/配件</a>
+                        <a href="#" title="">其他电器配件</a>
+                        <a href="#" title="">其他</a>
+                    </div>
+                    <div class="sider-type-item" data-id="7">
+                        <a href="#" title="">家具</a>
+                        <a href="#" title="">办公文具</a>
+                        <a href="#" title="">床上用品</a>
+                        <a href="#" title="">生活日用品</a>
+                        <a href="#" title="">灯饰建材</a>
+                        <a href="#" title="">装饰品</a>
+                        <a href="#" title="">成人用品</a>
+                        <a href="#" title="">清洁护理</a>
+                        <a href="#" title="">餐具/水具</a>
+                        <a href="#" title="">厨房卫浴</a>
+                        <a href="#" title="">其他</a>
+                    </div>
+                    <div class="sider-type-item" data-id="8">
+                        <a href="#" title="">美妆工具</a>
+                        <a href="#" title="">彩妆</a>
+                        <a href="#" title="">护肤</a>
+                        <a href="#" title="">精油香薰</a>
+                        <a href="#" title="">美发</a>
+                        <a href="#" title="">身体护理</a>
+                        <a href="#" title="">美容仪器</a>
+                        <a href="#" title="">香水</a>
+                        <a href="#" title="">其他</a>
+                    </div>
+                    <div class="sider-type-item" data-id="9">
+                        <a href="#" title="">婴童服装</a>
+                        <a href="#" title="">婴幼用品</a>
+                        <a href="#" title="">早教玩具</a>
+                        <a href="#" title="">童鞋配饰</a>
+                        <a href="#" title="">孕产新妈</a>
+                        <a href="#" title="">玩具益智</a>
+                        <a href="#" title="">其他</a>
+                    </div>
+                    <div class="sider-type-item" data-id="10">
+                        <a href="#" title="">汽车用品</a>
+                        <a href="#" title="">运动/户外器材</a>
+                        <a href="#" title="">办公设备</a>
+                        <a href="#" title="">宠物用品</a>
+                        <a href="#" title="">钓鱼用品</a>
+                        <a href="#" title="">绿植园艺</a>
+                        <a href="#" title="">鲜花花卉</a>
                         <a href="#" title="">其他</a>
                     </div>
                 </div>
