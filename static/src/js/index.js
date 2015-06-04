@@ -21,10 +21,11 @@ $(function(){
     });
 
     $('#J_side').find('li').hover(function() {
-        $(this).find('.tab-item').stop(true).fadeIn().delay(500).animate({left: '-90px'},{queue:false,duration:300});
+        $(this).find('.tab-item').stop(true).delay(400).animate({opacity: 'show', left: '-90px'
+},{queue:true,duration:400});
         $(this).find('a').eq(0).addClass('tab-cur');
     }, function() {
-       $(this).find('.tab-item').stop(true).animate({left: '-140px'}, {queue:false,duration:300}).fadeOut();
+        $(this).find('.tab-item').stop(true).animate({left: '-140px'}, {queue:false,duration:300}).fadeOut();
         $(this).find('a').eq(0).removeClass('tab-cur');
     });
 })

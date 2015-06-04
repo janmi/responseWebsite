@@ -156,72 +156,65 @@
 
 
 .banner {
-    position:relative;
     width: 100%;
     height: 340px;
-    background-color: red;
 }
 .banner-main {
+    position: relative;
+    z-index: 100;
     margin: 0 auto;
     width: 1190px;
 }
-.banner-pannel {
-    float: left;
+.banner-panel{
+    position:relative;
+    width: 100%;
+}
+.banner-item{
+    position:absolute;
+    top:0;
+    left:0;
     width: 100%;
     height: 340px;
-    overflow: hidden;
-    background-color: red;
-
-    .banner-cont {
-        position:relative;
-        margin-left: 590px;
-        width: 800px;
-
-        ul {
-            _position: relative;
-            margin-left: -400px;
-            width: 800px;
-            height: 340px;
-            overflow: hidden;
-            background-color: #e1e1e1;
-
-            li {
-                float: left;
-
-                a {
-                    display: inline-block;
-                    width: 100%;
-                    height: 340px;
-                }
+    .banner-item-ct{
+        margin:0 auto;
+        padding-left: 190px;
+        width: 1000px;
+        height: 340px;
+        overflow: hidden;
+    }
+    &-cur{
+        z-index: 10;
+    }
+}
+.b-tab-box{
+    position: relative;
+    z-index: 11;
+    .b-tab{
+        position:absolute;
+        top:310px;
+        left:50%;
+        margin-left: -83px;
+        a{
+            display:inline-block;
+            margin-right: 10px;
+            width:20px;
+            height:20px;
+            border-radius: 50%;
+            background-color: #000;
+            text-align: center;
+            color:#fff;
+            &:hover{
+                background-color: #c40000;
             }
         }
-        .b-tab{
-            position:absolute;
-            bottom:10px;
-            left:0;
-            margin-left: -78px;
-            a{
-                display:inline-block;
-                margin-right: 10px;
-                width:20px;
-                height:20px;
-                border-radius: 50%;
-                background-color: #000;
-                text-align: center;
-                color:#fff;
-                &:hover{
-                    background-color: #c40000;
-                }
-            }
+        .b-tab-cur{
+            background-color: #c40000;
         }
     }
 }
+
 .sider {
-    position: relative;
     float: left;
-    margin-left: -100%;
-    _margin-left: -1190px;
-    //fuck ie6, 解析到banner的宽度
     width: 190px;
     height: 340px;
     background-color: #faf1f2;
@@ -248,7 +241,6 @@
     }
     .sider-type{
         position:relative;
-        z-index: 11;
         background-color: #fff;
         a{
             padding-left: 40px;
@@ -291,7 +283,6 @@
         position:absolute;
         top: 0;
         left:190px; 
-        z-index: 10;
         display:none;
         width: 102px;
         height:337px;
@@ -318,9 +309,7 @@
     }
 }
 .small-banner {
-    position:relative;
-    float: left;
-    margin-left: -200px;
+    float: right;
     width: 200px;
     height: 340px;
     .small-panel{
@@ -396,6 +385,7 @@
         }
     }
 }
+
 .warp {
     padding-bottom: 110px;
     width: 100%;
