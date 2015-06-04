@@ -1,22 +1,19 @@
 $(function(){
-    var $bg = $('.J_banner');
-    var $bn = $('.J_bn').find('li');
-    var b_cur = 'b-cur';
+
+    var $bn = $('.J_banner').find('.banner-item');
+    var b_cur = 'banner-item-cur';
     var t_cur = 'b-tab-cur';
     var i = 0;
-    var cr = $bn.eq(i).data('color');
 
-    $bn.eq(i).addClass(b_cur);
+    $bn.eq(i).css('display','block').animate({opacity: 1, zIndex:'10'}, 2000, 'swing');
     $('.J_b_tab').find('a').eq(i).addClass(t_cur);
-    $bg.css('background-color', cr);
 
     $('.J_b_tab').find('a').hover(function() {
         i = $(this).index();
-        cr = $bn.eq(i).data('color');
-        $(this).siblings('a').removeClass(t_cur)
+        $(this).siblings('a').removeClass(t_cur);
         $(this).addClass(t_cur);
-        $bn.removeClass(b_cur).eq(i).addClass(b_cur);
-        $bg.css('background-color', cr);
-    });  
+        $bn.eq(i).css('display','block').animate({opacity: 1, zIndex:'10'}, 2000, 'swing');
+        $bn.eq(i).siblings('.banner-item').css({opacity: 0, display: 'none', zIndex:'1'});
+    });
 
 })
