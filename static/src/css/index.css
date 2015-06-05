@@ -160,7 +160,6 @@
   position: relative;
   z-index: 100;
   margin: 0 auto;
-  width: 1190px;
 }
 .banner-panel {
   position: relative;
@@ -171,7 +170,6 @@
   top: 0;
   left: 0;
   display: none;
-  opacity: 0;
   width: 100%;
   height: 340px;
 }
@@ -182,8 +180,16 @@
   height: 340px;
   overflow: hidden;
 }
-.banner-item-cur {
-  z-index: 10;
+.banner-item-cur img {
+  animation: scaleImg 3s linear;
+}
+@keyframes scaleImg {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .b-tab-box {
   position: relative;
@@ -286,6 +292,7 @@
   padding: 3px 5px 0 12px;
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.8);
+  _background-color: #000;
   filter: alpha(opacity=80);
   transition: transform .7s ease;
 }
@@ -349,7 +356,7 @@
   height: 122px;
   overflow: hidden;
   font-family: \5FAE\8F6F\96C5\9ED1;
-  background-color: #fdf3f6;
+  background-color: #fff;
 }
 .small-banner .notice-tab {
   width: 201px;
@@ -367,7 +374,7 @@
   white-space: nowrap;
 }
 .small-banner .notice-tab a:hover {
-  background-color: #fdf3f6;
+  background-color: #fff;
 }
 .small-banner .notice-tab .cur {
   background-color: #fdf3f6;
@@ -376,6 +383,18 @@
   display: inline-block;
   padding-left: 5px;
   line-height: 28px;
+}
+.ie7 .sider,
+.ie6 .sider {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ie7 .small-banner,
+.ie6 .small-banner {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .warp {
   padding-bottom: 110px;
