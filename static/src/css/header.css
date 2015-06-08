@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'iconfont';
-  src: url('//at.alicdn.com/t/font_1428890355_2089026.eot');
-  src: url('//at.alicdn.com/t/font_1428890355_2089026.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('//at.alicdn.com/t/font_1428890355_2089026.woff') format('woff'), /* chrome、firefox */ url('//at.alicdn.com/t/font_1428890355_2089026.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('//at.alicdn.com/t/font_1428890355_2089026.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_1433734549_990871.eot');
+  src: url('//at.alicdn.com/t/font_1433734549_990871.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('//at.alicdn.com/t/font_1433734549_990871.woff') format('woff'), /* chrome、firefox */ url('//at.alicdn.com/t/font_1433734549_990871.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('//at.alicdn.com/t/font_1433734549_990871.svg#iconfont') format('svg');
   
   /* IE9*/
   /* iOS 4.1- */
@@ -355,8 +355,8 @@ body {
   .new-goods .goods-cont-item .md-warp-cont {
     width: 800px;
   }
-  .floor-md .md-warp-cont {
-    width: 400px;
+  .floor-md .md-warp-cont-list {
+    width: 800px;
   }
   .expert-save {
     width: 590px;
@@ -391,8 +391,8 @@ body {
 .w990 .new-goods .goods-cont-item .md-warp-cont {
   width: 800px;
 }
-.w990 .floor-md .md-warp-cont {
-  width: 400px;
+.w990 .floor-md .md-warp-cont-list {
+  width: 800px;
 }
 .w990 .expert-save {
   width: 590px;

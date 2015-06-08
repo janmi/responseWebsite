@@ -10,7 +10,7 @@
             trigger: 'mouseover', //触发事件 注意用mouseover代替hover
             content_box: '.contents', //内容容器id或class
             content_tag: 'li', //内容标签 默认为<li>
-            content_class:'cur',
+            content_class:'',
             switcher_box: '.switchers', //切换触发器id或class
             switcher_tag: 'li', //切换器标签 默认为<li>
             active_class: 'active', //当前切换器样式名称 不含"."
@@ -92,6 +92,7 @@
                     $contents.eq(last_index).stop(true, true).fadeOut(settings.speed).end().eq(index).stop(true, true).fadeIn(settings.speed);
                     break;
                 case 'none':
+
                     $contents.hide().eq(index).show();
                     break;
             }
@@ -182,9 +183,67 @@ $(function(){
         switcher_box: ".J_b_tab",
         switcher_tag: 'a', //切换器标签 默认为<li>
         active_class: "b-tab-cur",
-        space: 5000,
         load_type: "img",
         isCheckShow: false
     });
 
+    $(".J_s_tab a").first().addClass('cur');
+    $(".J_s_b").Xslider({
+        content_box: '.J_s_p', //内容容器id或class
+        content_tag: 'li', //内容标签 默认为<li>
+        switcher_box: '.J_s_tab', //切换触发器id或class
+        switcher_tag: 'a', //切换器标签 默认为<li>
+        active_class: 'cur', //当前切换器样式名称 不含"."
+    });
+
+    $(".J_n_tab a").first().addClass('cur');
+    $(".J_n").Xslider({
+        content_box: '.J_n_c', //内容容器id或class
+        content_tag: '.notice-cont-item', //内容标签 默认为<li>
+        switcher_box: '.J_n_tab', //切换触发器id或class
+        switcher_tag: 'a', //切换器标签 默认为<li>
+        active_class: 'cur', //当前切换器样式名称 不含"."
+    });
+
+    // $(".J_g_n_tab a").first().addClass('goods-tab-item-cur');
+    // $(".J_g_n").Xslider({
+    //     content_box: '.J_g_n_c', //内容容器id或class
+    //     content_tag: '.goods-cont-item', //内容标签 默认为<li>
+    //     switcher_box: '.J_g_n_tab', //切换触发器id或class
+    //     switcher_tag: 'a', //切换器标签 默认为<li>
+    //     active_class: 'goods-tab-item-cur', //当前切换器样式名称 不含"."
+    // });
+
+    // $(".J_side_c").Xslider({
+    //     effect:'scrollx',
+    //     content_box: '.J_g_n_c', //内容容器id或class
+    //     content_tag: 'ul', //内容标签 默认为<li>
+    //     prev: '.prev', //上一个幅箭头样式名称
+    //     next: '.next', //下一个幅箭头样式名称
+    //     load_type: "img",
+    //     isCheckShow: false
+    // });
+    
+    var objStr = ['J_fashion_type', 'J_life_type', 'J_infant_type'];
+    for (var i = 0; i < objStr.length; i++) {
+        $("."+objStr[i]).Xslider({
+            content_box: '.J_g_t_cont', //内容容器id或class
+            content_tag: '.md-warp-cont-item', //内容标签 默认为<li>
+            switcher_box: '.J_g_t_tab', //切换触发器id或class
+            switcher_tag: 'li', //切换器标签 默认为<li>
+            active_class: 'cur', //当前切换器样式名称 不含"."
+            load_type: "img",
+            isCheckShow: false
+        });
+    };
+
+    $(".J_expert").Xslider({
+        content_box: '.J_e_cont', //内容容器id或class
+        content_tag: 'ul', //内容标签 默认为<li>
+        switcher_box: '.J_e_tab', //切换触发器id或class
+        switcher_tag: 'a', //切换器标签 默认为<li>
+        active_class: 'expert-save-tab-cur', //当前切换器样式名称 不含"."
+        load_type: "img",
+        isCheckShow: false
+    });
 })

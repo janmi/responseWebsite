@@ -183,8 +183,8 @@
         height: 340px;
         overflow: hidden;
     }
-    &-cur img{
-        animation:scaleImg 3s linear;
+    &-cur img{ 
+        animation:scaleImg 2s linear forwards;
     }
 }
 @keyframes scaleImg{
@@ -383,14 +383,17 @@
                 }
             }
             .cur{
-                background-color: #fdf3f6;
+                background-color: #fff;
             }
         }
         &-cont-item{
             a{
                 display:inline-block;
-                padding-left:5px; 
+                padding-left:5px;
+                width:100%;
+                height:25px; 
                 line-height:28px;
+                .elps();
             }
         }
     }
@@ -426,17 +429,16 @@
 /*公共侧边导航样式 layout_md.less*/
 #layout-md > .md-f-sidebar;
 
-/*公共banner样式 layout_md.less*/
-#layout-md > .md-f-banner;
 
 .new-goods {
     .new-goods-tab {
+        position:relative;
         .goods-tab-item {
             position: relative;
             display: inline-block;
+            margin-right: 20px;
             float: left;
             width: 67px;
-
             &:hover {
                 color: #d11414;
             }
@@ -452,29 +454,52 @@
             }
         }
         span {
+            position:absolute;
+            left:75px;
             display: inline-block;
-            float: left;
-            margin: 0 10px;
             font-size: 12px;
             line-height: 29px;
         }
     }
     .new-goods-cont {
+        position:relative;
         width: 100%;
         height: 263px;
         overflow: hidden;
     }
-    .goods-cont-item {
-        float: left;
-
-        .goods-cont-item-bn {
-            float: left;
-            width: 190px;
-            height: 263px;
-            background-color: red;
-        }
+    .goods-cont-item-bn {
+        position:absolute;
+        top:0;
+        left:0;
+        width: 190px;
+        height: 263px;
+    }
+    .goods-cont-item{
         .md-warp-cont {
             width: 1000px;
+            float:left;
+        }
+    }
+    .new-goods-cont-tab{
+        position:relative;
+        width:100%;
+        a{
+            position:absolute;
+            top: 103px;
+            display:inline-block;
+            width:35px;
+            height:57px;
+            text-align: center;
+            color:#fff;
+            font-size: 23px;
+            line-height: 57px;
+            .background-rgba(0, 0, 0, .2);
+        }
+        .tab-l{
+            left:191px;
+        }
+        .tab-r{
+            right:1px;
         }
     }
 }
@@ -483,10 +508,6 @@
     overflow: hidden;
 
     .md-warp-cont {
-        width: 600px;
-        height: 526px;
-        overflow: hidden;
-
         li {
             border-bottom: 1px solid #f5f5f5;
         }
@@ -560,13 +581,14 @@
             color: #d11414;
         }
         &-tab {
-            margin-right: 10px;
+            position:relative;
             float: right;
             font-size: 12px;
 
             a {
                 display: inline-block;
                 position: relative;
+                margin: 0 10px;
                 color: #333;
 
                 &:hover {
@@ -584,6 +606,9 @@
                 }
             }
             span {
+                position:absolute;
+                top:0;
+                right:60px;
                 display: inline-block;
                 margin: 0 6px;
             }
@@ -594,6 +619,7 @@
             overflow:hidden;
         }
         .save-cont-item {
+            float:left;
             li {
                 float: left;
                 width: 263px;
