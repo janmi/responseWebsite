@@ -462,19 +462,22 @@
         }
     }
     .new-goods-cont {
-        position:relative;
-        width: 100%;
+        float: left;
+        width: 1000px;
         height: 263px;
         overflow: hidden;
     }
     .goods-cont-item-bn {
-        position:absolute;
-        top:0;
-        left:0;
+        float: left;
         width: 190px;
         height: 263px;
     }
     .goods-cont-item{
+        position: relative;
+        display:none;
+        .goods-c-i-p{
+            position: absolute;
+        }
         .md-warp-cont {
             width: 1000px;
             float:left;
@@ -496,7 +499,7 @@
             .background-rgba(0, 0, 0, .2);
         }
         .tab-l{
-            left:191px;
+            left:1px;
         }
         .tab-r{
             right:1px;

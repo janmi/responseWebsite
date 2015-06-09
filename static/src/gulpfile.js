@@ -2,7 +2,7 @@
 
 var gulp    = require('gulp'),
     less    = require('gulp-less'),
-    autoprefixer = require('autoprefixer'),
+    autoprefixer = require('gulp-autoprefixer'),
     plumber = require('gulp-plumber');
 
 

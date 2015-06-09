@@ -21,6 +21,7 @@
              *recycle:true,
              */
             rand: false, //是否随机指定默认幻灯页
+            paly_index:0,//默认播放第几张
             index: '', //是否显示索引 1、容器id或class(1/5) || 2、list( 1,2,3,4,5 )添加到 switcher_box: '.switchers' 容器；切换器标签 switcher_tag: 'li'
             load_type: false,//加载图片 有img|textarea|false
             callback_fn: null, //回调函数 返回内容索引
@@ -38,10 +39,8 @@
         var content_left = content_pos.left;
         var content_top = content_pos.top;
 
-        if (settings.rand) {
-            index = Math.floor(Math.random() * $contents.length);
-            slide();
-        }
+
+
         if (settings.effect == 'fade') {
             $.each($contents, function (k, v) {
                 (k == 0) ? $(this).css({'position': 'absolute', 'z-index': 10}) : $(this).css({'position': 'absolute', 'z-index': 1});
@@ -133,6 +132,16 @@
             }
         }
 
+        if (settings.rand) {
+            index = Math.floor(Math.random() * $contents.length);
+            slide();
+        }
+
+        if (settings.paly_index > 0 ) {
+            index = settings.paly_index-1;
+            slide();
+        }
+
         if (settings.auto) var Timer = setInterval(slide, settings.space);
         $switcher_tag.bind(settings.trigger, function () {
             if ($(this).hasClass(settings.active_class)) return false;
@@ -171,61 +180,71 @@
 
 
 $(function(){
-    $(".J_banner .banner-item").first().fadeIn(5000).addClass('banner-item-cur');
-    $(".J_b_tab a").first().addClass('b-tab-cur');
-
+    //banner
     $(".J_banner").Xslider({
         effect: "fade",
         auto: true,
         content_box: ".banner-cont",
-        content_tag: '.banner-item', //内容标签 默认为<li>
+        content_tag: '.banner-item', 
         content_class:'banner-item-cur',
         switcher_box: ".J_b_tab",
-        switcher_tag: 'a', //切换器标签 默认为<li>
+        switcher_tag: 'a',
         active_class: "b-tab-cur",
+        rand:true,
         load_type: "img",
         isCheckShow: false
     });
-
-    $(".J_s_tab a").first().addClass('cur');
+    // min banner
     $(".J_s_b").Xslider({
-        content_box: '.J_s_p', //内容容器id或class
-        content_tag: 'li', //内容标签 默认为<li>
-        switcher_box: '.J_s_tab', //切换触发器id或class
-        switcher_tag: 'a', //切换器标签 默认为<li>
-        active_class: 'cur', //当前切换器样式名称 不含"."
+        content_box: '.J_s_p', 
+        content_tag: 'li', 
+        switcher_box: '.J_s_tab', 
+        switcher_tag: 'a', 
+        active_class: 'cur', 
+        paly_index:1
     });
-
-    $(".J_n_tab a").first().addClass('cur');
+    //公告
     $(".J_n").Xslider({
-        content_box: '.J_n_c', //内容容器id或class
-        content_tag: '.notice-cont-item', //内容标签 默认为<li>
-        switcher_box: '.J_n_tab', //切换触发器id或class
-        switcher_tag: 'a', //切换器标签 默认为<li>
-        active_class: 'cur', //当前切换器样式名称 不含"."
+        content_box: '.J_n_c', 
+        content_tag: '.notice-cont-item', 
+        switcher_box: '.J_n_tab', 
+        switcher_tag: 'a', 
+        active_class: 'cur', 
+        paly_index:1
     });
-
-    $(".J_g_n_tab a").first().addClass('goods-tab-item-cur');
+    //最新上线/新品预告切换
     $(".J_g_n").Xslider({
-        content_box: '.J_g_n_c', //内容容器id或class
-        content_tag: '.goods-cont-item', //内容标签 默认为<li>
-        switcher_box: '.J_g_n_tab', //切换触发器id或class
-        switcher_tag: 'a', //切换器标签 默认为<li>
-        active_class: 'goods-tab-item-cur', //当前切换器样式名称 不含"."
+        content_box: '.J_g_n_c', 
+        content_tag: '.goods-cont-item', 
+        switcher_box: '.J_g_n_tab',
+        switcher_tag: 'a', 
+        active_class: 'goods-tab-item-cur', 
+        load_type: "img",
+        isCheckShow: false,
+        paly_index:1
+    });
+    //最新上线轮换
+    $(".J_side_line").Xslider({
+        effect:'scrollx',
+        content_box: '.goods-c-i-p',
+        content_tag: 'ul', 
+        prev: '.J_prev', 
+        next: '.J_next', 
         load_type: "img",
         isCheckShow: false
     });
-
-    // $(".J_side_c").Xslider({
-    //     effect:'scrollx',
-    //     content_box: '.J_g_n_c', //内容容器id或class
-    //     content_tag: 'ul', //内容标签 默认为<li>
-    //     prev: '.prev', //上一个幅箭头样式名称
-    //     next: '.next', //下一个幅箭头样式名称
-    //     load_type: "img",
-    //     isCheckShow: false
-    // });
+    //新品预告轮换
+    $(".J_side_new").Xslider({
+        effect:'scrollx',
+        content_box: '.goods-c-i-p', 
+        content_tag: 'ul', 
+        prev: '.J_prev', 
+        next: '.J_next',
+        load_type: "img",
+        isCheckShow: false
+    });
     
+    //潮流穿搭、生活百货、母婴用品
     var objStr = ['J_fashion_type', 'J_life_type', 'J_infant_type'];
     for (var i = 0; i < objStr.length; i++) {
         $("."+objStr[i]).Xslider({
@@ -235,17 +254,20 @@ $(function(){
             switcher_tag: 'li', //切换器标签 默认为<li>
             active_class: 'cur', //当前切换器样式名称 不含"."
             load_type: "img",
-            isCheckShow: false
+            isCheckShow: false,
+            paly_index:1
         });
     };
 
+    //省钱达人
     $(".J_expert").Xslider({
-        content_box: '.J_e_cont', //内容容器id或class
-        content_tag: 'ul', //内容标签 默认为<li>
-        switcher_box: '.J_e_tab', //切换触发器id或class
-        switcher_tag: 'a', //切换器标签 默认为<li>
-        active_class: 'expert-save-tab-cur', //当前切换器样式名称 不含"."
+        content_box: '.J_e_cont', 
+        content_tag: 'ul', 
+        switcher_box: '.J_e_tab', 
+        switcher_tag: 'a', 
+        active_class: 'expert-save-tab-cur', 
         load_type: "img",
-        isCheckShow: false
+        isCheckShow: false,
+        paly_index:2
     });
 })

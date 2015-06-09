@@ -124,9 +124,12 @@
   -webkit-transition-property: background-position;
   -webkit-transition-duration: .1s;
   -webkit-transition-timing-function: linear;
-  transition-property: background-position;
-  transition-duration: .1s;
-  transition-timing-function: linear;
+  -webkit-transition-property: background-position;
+          transition-property: background-position;
+  -webkit-transition-duration: .1s;
+          transition-duration: .1s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 .nav-md .zs-inlet .zs-tit {
   width: 130px;
@@ -181,14 +184,27 @@
   overflow: hidden;
 }
 .banner-item-cur img {
-  animation: scaleImg 2s linear forwards;
+  -webkit-animation: scaleImg 2s linear forwards;
+          animation: scaleImg 2s linear forwards;
+}
+@-webkit-keyframes scaleImg {
+  0% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 @keyframes scaleImg {
   0% {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 .b-tab-box {
@@ -254,7 +270,8 @@
   font-size: 14px;
   font-family: \5FAE\8F6F\96C5\9ED1;
   color: #6c6666;
-  transition: padding-left 0.5s ease;
+  -webkit-transition: padding-left 0.5s ease;
+          transition: padding-left 0.5s ease;
 }
 .sider .sider-type a .iconfont {
   margin-right: 10px;
@@ -294,7 +311,8 @@
   background-color: rgba(0, 0, 0, 0.8);
   _background-color: #000;
   filter: alpha(opacity=80);
-  transition: transform .7s ease;
+  -webkit-transition: -webkit-transform .7s ease;
+          transition: transform .7s ease;
 }
 .sider .sider-type-item a {
   display: inline-block;
@@ -436,8 +454,6 @@
   font-size: 15px;
   font-weight: normal;
   -webkit-transition: -webkit-transform 0.2s linear;
-  -moz-transition: -moz-transform 0.2s linear;
-  -o-transition: -o-transform 0.2s linear;
   transition: transform .2s linear;
 }
 .floor-title .more:hover {
@@ -446,9 +462,7 @@
 .floor-title .more:hover b {
   color: #d11414;
   -webkit-transform: scale(1.4);
-  -moz-transform: scale(1.4);
   -ms-transform: scale(1.4);
-  -o-transform: scale(1.4);
   transform: scale(1.4);
 }
 .floor-title h2 {
@@ -548,15 +562,11 @@
 .md-warp-bn a img {
   margin-left: -5px;
   -webkit-transition: -webkit-transform 0.2s linear;
-  -moz-transition: -moz-transform 0.2s linear;
-  -o-transition: -o-transform 0.2s linear;
   transition: transform .2s linear;
 }
 .md-warp-bn a img:hover {
   -webkit-transform: translateX(5px);
-  -moz-transform: translateX(5px);
   -ms-transform: translateX(5px);
-  -o-transform: translateX(5px);
   transform: translateX(5px);
 }
 .md-warp-bn .md-warp-bn-info {
@@ -629,7 +639,9 @@
   color: #d11414;
 }
 .md-warp-sidebar ul li a:hover b {
-  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
   color: #d11414;
 }
 .md-warp-sidebar ul li b {
@@ -637,7 +649,8 @@
   display: inline-block;
   font-weight: normal;
   color: #555;
-  transition: transform .2s linear;
+  -webkit-transition: -webkit-transform .2s linear;
+          transition: transform .2s linear;
 }
 .md-warp-sidebar ul .cur a {
   color: #d11414;
@@ -684,17 +697,22 @@
   line-height: 29px;
 }
 .new-goods .new-goods-cont {
-  position: relative;
-  width: 100%;
+  float: left;
+  width: 1000px;
   height: 263px;
   overflow: hidden;
 }
 .new-goods .goods-cont-item-bn {
-  position: absolute;
-  top: 0;
-  left: 0;
+  float: left;
   width: 190px;
   height: 263px;
+}
+.new-goods .goods-cont-item {
+  position: relative;
+  display: none;
+}
+.new-goods .goods-cont-item .goods-c-i-p {
+  position: absolute;
 }
 .new-goods .goods-cont-item .md-warp-cont {
   width: 1000px;
@@ -719,7 +737,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33000000', endColorstr='#33000000');
 }
 .new-goods .new-goods-cont-tab .tab-l {
-  left: 191px;
+  left: 1px;
 }
 .new-goods .new-goods-cont-tab .tab-r {
   right: 1px;
@@ -1088,9 +1106,7 @@
 }
 .f-strength .f-strength-item-sub .align:hover .weinxi {
   -webkit-transform: scale(1.4);
-  -moz-transform: scale(1.4);
   -ms-transform: scale(1.4);
-  -o-transform: scale(1.4);
   transform: scale(1.4);
 }
 .f-strength .f-strength-item-sub span {
@@ -1115,8 +1131,6 @@
   background-color: #fff;
   background-position: -294px -205px;
   -webkit-transition: -webkit-transform 0.2s linear;
-  -moz-transition: -moz-transform 0.2s linear;
-  -o-transition: -o-transform 0.2s linear;
   transition: transform .2s linear;
 }
 .f-strength .f-strength-item-sub .weixin-tit {
