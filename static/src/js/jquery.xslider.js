@@ -205,14 +205,16 @@ $(function(){
         active_class: 'cur', //当前切换器样式名称 不含"."
     });
 
-    // $(".J_g_n_tab a").first().addClass('goods-tab-item-cur');
-    // $(".J_g_n").Xslider({
-    //     content_box: '.J_g_n_c', //内容容器id或class
-    //     content_tag: '.goods-cont-item', //内容标签 默认为<li>
-    //     switcher_box: '.J_g_n_tab', //切换触发器id或class
-    //     switcher_tag: 'a', //切换器标签 默认为<li>
-    //     active_class: 'goods-tab-item-cur', //当前切换器样式名称 不含"."
-    // });
+    $(".J_g_n_tab a").first().addClass('goods-tab-item-cur');
+    $(".J_g_n").Xslider({
+        content_box: '.J_g_n_c', //内容容器id或class
+        content_tag: '.goods-cont-item', //内容标签 默认为<li>
+        switcher_box: '.J_g_n_tab', //切换触发器id或class
+        switcher_tag: 'a', //切换器标签 默认为<li>
+        active_class: 'goods-tab-item-cur', //当前切换器样式名称 不含"."
+        load_type: "img",
+        isCheckShow: false
+    });
 
     // $(".J_side_c").Xslider({
     //     effect:'scrollx',
