@@ -166,6 +166,7 @@
         });
 
         $content_box.hover(_pause, _continue);
+        
         function _pause() {
             clearInterval(Timer);
         }
@@ -180,6 +181,7 @@
 
 
 $(function(){
+
     //banner
     $(".J_banner").Xslider({
         effect: "fade",
@@ -194,6 +196,7 @@ $(function(){
         load_type: "img",
         isCheckShow: false
     });
+
     // min banner
     $(".J_s_b").Xslider({
         content_box: '.J_s_p', 
@@ -203,6 +206,7 @@ $(function(){
         active_class: 'cur', 
         paly_index:1
     });
+
     //公告
     $(".J_n").Xslider({
         content_box: '.J_n_c', 
@@ -212,6 +216,7 @@ $(function(){
         active_class: 'cur', 
         paly_index:1
     });
+
     //最新上线/新品预告切换
     $(".J_g_n").Xslider({
         content_box: '.J_g_n_c', 
@@ -223,6 +228,7 @@ $(function(){
         isCheckShow: false,
         paly_index:1
     });
+
     //最新上线轮换
     $(".J_side_line").Xslider({
         effect:'scrollx',
@@ -233,6 +239,7 @@ $(function(){
         load_type: "img",
         isCheckShow: false
     });
+
     //新品预告轮换
     $(".J_side_new").Xslider({
         effect:'scrollx',
@@ -270,4 +277,5 @@ $(function(){
         isCheckShow: false,
         paly_index:2
     });
+
 })

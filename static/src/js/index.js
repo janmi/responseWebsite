@@ -28,4 +28,9 @@ $(function(){
         $(this).find('.tab-item').stop(true).animate({left: '-140px'}, {queue:false,duration:300}).fadeOut();
         $(this).find('a').eq(0).removeClass('tab-cur');
     });
+
+    $(window).resize(function() {
+        $('#J_r_sidebar').height($(window).height());
+    });
+    $(window).resize();
 })
