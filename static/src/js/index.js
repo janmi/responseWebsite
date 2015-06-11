@@ -13,7 +13,6 @@ var shs = (function(){
 
 
 $(function(){
-
     $('.J_attention,.J_n-site-map').hover(function() {
         $(this).find('.n-cont').addClass('n-cont-cur');
     }, function() {
@@ -29,7 +28,10 @@ $(function(){
         $(this).find('a').eq(0).removeClass('tab-cur');
     });
 
-        //banner
+    //分类导航 
+    $('.J_menu').MenuNav();
+
+    //banner
     $(".J_banner").Xslider({
         effect: "fade",
         auto: true,
@@ -124,9 +126,14 @@ $(function(){
         isCheckShow: false,
         paly_index:2
     });
-    
+
     $(window).resize(function() {
         $('#J_r_sidebar').height($(window).height());
     });
     $(window).resize();
+
+
+
+
+
 })
