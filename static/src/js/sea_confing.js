@@ -2,15 +2,15 @@ var seajsTimestamp = new Date().getTime();
 
 seajs.config({
     /* 基础路径 */
-    base: "http://www.zhsnew.com/",
+    base: "/",
 
     /* js调用别名配置 */
     alias: {
         "placeholder": "static/src/js/libs/jquery.placeholder",
         "template": "static/src/js/libs/template",
         "xslider":"static/src/js/jquery.xslider",
-        "menunav":"static/src/js/jquery/menunav",
-        "index":"static/src/js/index",
+        "menunav":"static/src/js/jquery.MenuNav",
+        "Layzr":"static/src/js/libs/Layzr",
         "sea-debug":"static/src/js/libs/seajs/sea-debug"
     },
 
@@ -20,7 +20,7 @@ seajs.config({
     ],
 
     /* 预加载项目 */
-    // preload: ['template', 'xslider', 'menunav', 'index'],
+    preload: ['template', 'xslider', 'menunav', 'Layzr'],
 
     // 调试模式
     debug: true

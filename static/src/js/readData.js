@@ -1,4 +1,8 @@
-$(function(){
+define(function(require, exports, module) {
+    
+    var template = require('template');
+    var Layzr = require('Layzr');
+
     var read = function(){
         return {
             /*初始化模版、读取数据*/
@@ -51,4 +55,5 @@ $(function(){
             }
         }
     }().init();
-})   
+
+});
