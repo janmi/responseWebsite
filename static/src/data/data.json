@@ -62,7 +62,70 @@
             "price":"59.00"
         }
     ],
-    "floor_clnn":{
+    "newgoods":[
+        {
+            "tit":"【包邮】 夏季情侣必备纯色人字拖",
+            "link":"http://detail.zhonghuasuan.com/245963.html",
+            "imgurl":"http://img.zhonghuasuan.com/mall/goods/2015/05/30/1304565238.jpg_350x350.jpg",
+            "zhs_price":"1.74",
+            "price":"5.80"
+        },{
+            "tit":"【包邮】 淡雅风欧式床头台灯卧室喜庆新婚创意香薰灯百搭时尚包",
+            "link":"http://detail.zhonghuasuan.com/249022.html",
+            "imgurl":"http://img.zhonghuasuan.com/mall/goods/2015/06/04/1834542621.jpg_350x350.jpg",
+            "zhs_price":"29.23",
+            "price":"79.00"
+        },{
+            "tit":"【包邮】 茵诗黛尔长款雪纺连衣裙",
+            "link":"http://detail.zhonghuasuan.com/196822.html",
+            "imgurl":"http://img.zhonghuasuan.com/mall/goods/2015/02/09/1746285986.jpg_350x350.jpg",
+            "zhs_price":"45.00",
+            "price":"90.00"
+        },{
+            "tit":"【包邮】 茵诗黛尔夏装新红色性感雪纺连衣裙女短裙夏季",
+            "link":"http://detail.zhonghuasuan.com/215421.html",
+            "imgurl":"http://img.zhonghuasuan.com/mall/goods/2015/04/07/1506509603.jpg_350x350.jpg",
+            "zhs_price":"49.68",
+            "price":"138.00"
+        },{
+            "tit":"【包邮】 茵诗黛尔女装连衣裙韩国时尚性感修身包臀裙",
+            "link":"http://detail.zhonghuasuan.com/215454.html",
+            "imgurl":"http://img.zhonghuasuan.com/mall/goods/2015/04/07/1528046012.jpg_350x350.jpg",
+            "zhs_price":"34.56",
+            "price":"108.00"
+        },{
+            "tit":"【包邮】 茵诗黛尔休闲职业ol衬衫女装",
+            "link":"http://detail.zhonghuasuan.com/196655.html",
+            "imgurl":"http://img.zhonghuasuan.com/mall/goods/2015/02/07/1618457041.jpg_350x350.jpg",
+            "zhs_price":"26.00",
+            "price":"52.00"
+        },{
+            "tit":"【包邮】 茵诗黛尔2015新款蕾丝欧根纱连衣裙女装",
+            "link":"http://detail.zhonghuasuan.com/220178.html",
+            "imgurl":"http://img.zhonghuasuan.com/mall/goods/2015/04/14/1701479211.jpg_350x350.jpg",
+            "zhs_price":"34.50",
+            "price":"69.00"
+        },{
+            "tit":"【包邮】 茵诗黛尔中长款气质雪纺连衣裙",
+            "link":"http://detail.zhonghuasuan.com/196584.html",
+            "imgurl":"http://img.zhonghuasuan.com/mall/goods/2015/02/06/1637047261.jpg_350x350.jpg",
+            "zhs_price":"36.00",
+            "price":"72.00"
+        },{
+            "tit":"【包邮】 精品羊毛！羊绒外套女毛呢中长款大衣",
+            "link":"http://detail.zhonghuasuan.com/132171.html",
+            "imgurl":"http://img.zhonghuasuan.com/mall/goods/2014/08/12/1429099519.jpg_350x350.jpg",
+            "zhs_price":"83.50",
+            "price":"167.00"
+        },{
+            "tit":"【包邮】 宿途春夏棉麻休闲裤男士九分裤",
+            "link":"http://detail.zhonghuasuan.com/213149.html",
+            "imgurl":"http://img.zhonghuasuan.com/mall/goods/2015/04/01/1757493655.jpg_350x350.jpg",
+            "zhs_price":"34.50",
+            "price":"69.00"
+        }
+    ],
+    "floor_clnz":{
         "banner":[
             {
                 "tit":"618珠宝大趴",

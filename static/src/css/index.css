@@ -8,6 +8,9 @@
 .sprite {
   background: url(/static/src/img/sprite.png) no-repeat;
 }
+.loading {
+  background: url(/static/src/img/zw.gif) no-repeat center;
+}
 .header {
   margin: 0 auto;
   width: 1190px;

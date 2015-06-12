@@ -119,8 +119,8 @@
                             case 'img':
                                 $tempDate.each(function () {
                                     var $self = $(this);
-                                    if ($self.attr('data-url')) {
-                                        $self.attr('src', $self.data('url')).removeAttr('data-url');
+                                    if ($self.attr('data-layzr')) {
+                                        $self.attr('src', $self.data('layzr')).removeAttr('data-layzr');
                                     }
                                 });
                                 break;

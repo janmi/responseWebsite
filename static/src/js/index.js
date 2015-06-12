@@ -13,6 +13,7 @@ var shs = (function(){
 
 
 $(function(){
+    
     $('.J_attention,.J_n-site-map').hover(function() {
         $(this).find('.n-cont').addClass('n-cont-cur');
     }, function() {

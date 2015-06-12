@@ -16,10 +16,10 @@
     <link rel="stylesheet" href="static/src/css/common/common.css">
     <link rel="stylesheet" href="static/src/css/index.css">
     <link rel="stylesheet" href="static/src/css/header.css">
-
+    
     <script src="static/src/js/jquery-1.10.1.min.js"></script>
-    <script src="static/src/js/readData.js"></script>
     <script src="static/src/js/libs/template.js"></script>
+    <script src="static/src/js/libs/layzr.js"></script>
     <script src="static/src/js/readData.js"></script>
     <script src="static/src/js/jquery.MenuNav.js"></script>
     <script src="static/src/js/jquery.xslider.js"></script>
@@ -281,9 +281,9 @@
             <div class="J_s_b small-banner">
                 <div class="J_s_p small-panel">
                     <ul>
-                        <li><a href="#"><img src="/static/src/img/small2.png" width="200" height="218" alt="" /></a></li>
-                        <li><a href="#"><img src="/static/src/img/small1.png" width="200" height="218" alt="" /></a></li>
-                        <li><a href="#"><img src="/static/src/img/small3.png" width="200" height="218" alt="" /></a></li>
+                        <li><a href="#"><img class="loading" src="/static/src/img/small2.png" width="200" height="218" alt="" /></a></li>
+                        <li><a href="#"><img class="loading" src="/static/src/img/small1.png" width="200" height="218" alt="" /></a></li>
+                        <li><a href="#"><img class="loading" src="/static/src/img/small3.png" width="200" height="218" alt="" /></a></li>
                     </ul>
                     <div class="J_s_tab small-tab">
                         <a href="javascript:;"></a>
@@ -322,35 +322,35 @@
                 <div class="banner-item" style="background-color:#fe2f70">
                     <div class="banner-item-ct">
                         <a href="#1">
-                            <img src="/static/src/img/1.jpg" width="800" height="340" alt="" />
+                            <img class="loading" src="/static/src/img/1.jpg" width="800" height="340" alt="" />
                         </a>
                     </div>
                 </div>
                 <div class="banner-item" style="background-color:#ff6591">
                     <div class="banner-item-ct">
                         <a href="#2">
-                            <img src="/static/src/img/2.jpg" width="800" height="340" alt="" />
+                            <img class="loading" src="/static/src/img/2.jpg" width="800" height="340" alt="" />
                         </a>
                     </div>
                 </div>
                 <div class="banner-item" style="background-color:#dcdcdc">
                     <div class="banner-item-ct">
                         <a href="#3">
-                            <img src="/static/src/img/3.jpg" width="800" height="340" alt="" />
+                            <img class="loading" src="/static/src/img/3.jpg" width="800" height="340" alt="" />
                         </a>
                     </div>
                 </div>
                 <div class="banner-item" style="background-color:#dcdcdc">
                     <div class="banner-item-ct">
                         <a href="#4">
-                            <img src="/static/src/img/4.jpg" width="800" height="340" alt="" />
+                            <img class="loading" src="/static/src/img/4.jpg" width="800" height="340" alt="" />
                         </a>
                     </div>
                 </div>
                 <div class="banner-item" style="background-color:#f53252">
                     <div class="banner-item-ct">
                         <a href="#5">
-                            <img src="/static/src/img/5.jpg" width="800" height="340" alt="" />
+                            <img class="loading" src="/static/src/img/5.jpg" width="800" height="340" alt="" />
                         </a>
                     </div>
                 </div>
@@ -385,11 +385,11 @@
                 <div class="J_side_line goods-cont-item">
                     <div class="goods-c-i-p">
                         <ul class="J_newline md-warp-cont">
-                            <script id="artNewline" type="text/html">
+                            <script id="T_Newline" type="text/html">
                                 {{each newline as data}}
                                     <li>
                                         <a href="{{data.link}}" target="_blank">
-                                            <img src="static/src/img/zw.gif" data-url="{{data.imgurl}}" width="173" height="173" alt="{{data.tit}}" />
+                                            <img class="loading" src="static/src/img/blank.gif" data-layzr="{{data.imgurl}}" width="173" height="173" alt="{{data.tit}}" />
                                             <span class="goods-title">{{data.tit}}</span>
                                         </a>
                                         <p class="price-box">
@@ -409,110 +409,23 @@
                 </div>
                 <div class="J_side_new goods-cont-item">
                     <div class="goods-c-i-p">
-                        <ul class="md-warp-cont">
-                            <li>
-                                <a href="#">
-                                    <img src="#" width="173" height="173" alt="" />
-                                    <span class="goods-title">【包邮】全棉包包秋衣2</span>
-                                </a>
-                                <p class="price-box">
-                                    <span class="hs-price"><b>￥</b>14111.75</span>
-                                    <span class="del-price">59111.75元</span>
-                                </p>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="#" width="173" height="173" alt="" />
-                                    <span class="goods-title">【包邮】全棉包包秋衣2</span>
-                                </a>
-                                <p class="price-box">
-                                    <span class="hs-price"><b>￥</b>14111.75</span>
-                                    <span class="del-price">59111.75元</span>
-                                </p>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="#" width="173" height="173" alt="" />
-                                    <span class="goods-title">【包邮】全棉包包秋衣2</span>
-                                </a>
-                                <p class="price-box">
-                                    <span class="hs-price"><b>￥</b>14111.75</span>
-                                    <span class="del-price">59111.75元</span>
-                                </p>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="#" width="173" height="173" alt="" />
-                                    <span class="goods-title">【包邮】全棉包包秋衣2</span>
-                                </a>
-                                <p class="price-box">
-                                    <span class="hs-price"><b>￥</b>14111.75</span>
-                                    <span class="del-price">59111.75元</span>
-                                </p>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="#" width="173" height="173" alt="" />
-                                    <span class="goods-title">【包邮】全棉包包秋衣2</span>
-                                </a>
-                                <p class="price-box">
-                                    <span class="hs-price"><b>￥</b>14111.75</span>
-                                    <span class="del-price">59111.75元</span>
-                                </p>
-                            </li>
+                        <ul class="J_newgoods md-warp-cont">
+                            <script id="T_Newgoods" type="text/html">
+                                {{each newgoods as data}}
+                                    <li>
+                                        <a href="{{data.link}}" target="_blank">
+                                            <img class="loading" src="static/src/img/blank.gif" data-layzr="{{data.imgurl}}" width="173" height="173" alt="{{data.tit}}" />
+                                            <span class="goods-title">{{data.tit}}</span>
+                                        </a>
+                                        <p class="price-box">
+                                            <span class="hs-price"><b>￥</b>{{data.zhs_price}}</span>
+                                            <span class="del-price">{{data.zhs_price}}元</span>
+                                        </p>
+                                    </li>
+                                {{/each}}
+                            </script>  
                         </ul>
-                        <ul class="md-warp-cont">
-                            <li>
-                                <a href="#">
-                                    <img src="#" width="173" height="173" alt="" />
-                                    <span class="goods-title">【包邮】全棉包包秋3</span>
-                                </a>
-                                <p class="price-box">
-                                    <span class="hs-price"><b>￥</b>14111.75</span>
-                                    <span class="del-price">59111.75元</span>
-                                </p>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="#" width="173" height="173" alt="" />
-                                    <span class="goods-title">【包邮】全棉包包秋3</span>
-                                </a>
-                                <p class="price-box">
-                                    <span class="hs-price"><b>￥</b>14111.75</span>
-                                    <span class="del-price">59111.75元</span>
-                                </p>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="#" width="173" height="173" alt="" />
-                                    <span class="goods-title">【包邮】全棉包包秋3</span>
-                                </a>
-                                <p class="price-box">
-                                    <span class="hs-price"><b>￥</b>14111.75</span>
-                                    <span class="del-price">59111.75元</span>
-                                </p>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="#" width="173" height="173" alt="" />
-                                    <span class="goods-title">【包邮】全棉包包秋3</span>
-                                </a>
-                                <p class="price-box">
-                                    <span class="hs-price"><b>￥</b>14111.75</span>
-                                    <span class="del-price">59111.75元</span>
-                                </p>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="#" width="173" height="173" alt="" />
-                                    <span class="goods-title">【包邮】全棉包包秋3</span>
-                                </a>
-                                <p class="price-box">
-                                    <span class="hs-price"><b>￥</b>14111.75</span>
-                                    <span class="del-price">59111.75元</span>
-                                </p>
-                            </li>
-                        </ul>
+                        <ul class="md-warp-cont"></ul>
                     </div>
 
                     <div class="J_g_n_c_tab new-goods-cont-tab">
@@ -546,101 +459,32 @@
             </div>
             <div class="J_g_t_cont md-warp-cont-list">
                 <div class="md-warp-cont-item">
-                    <div class="md-warp-bn">
-                        <a href="#">
-                            <img src="/static/src/img/bn.jpg">
-                            <div class="md-warp-bn-info">
-                                <span class="bn-tit bn-max-tit">冬装超值回馈</span>
-                                <span class="bn-tit bn-min-tit">男装特惠季</span>
-                                <span class="bn-detail">了解详情<b class="iconfont">&#xe618;</b></span>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <img src="/static/src/img/bn2.jpg">
-                            <div class="md-warp-bn-info">
-                                <span class="bn-tit bn-max-tit">冬装超值回馈</span>
-                                <span class="bn-tit bn-min-tit">男装特惠季</span>
-                                <span class="bn-detail">了解详情<b class="iconfont">&#xe618;</b></span>
-                            </div>
-                        </a>
+                    <div class="J_clzn_bn md-warp-bn">
+                        <script id="T_clnz_bn" type="text/html">
+                            {{each clzn_bn as data}}
+                                <a href="{{data.link}}">
+                                    <img data-layzr="{{data.imgurl}}" src="static/src/img/blank.gif" alt="{{data.tit}}">
+                                </a>
+                            {{/each}}
+                        </script>
                     </div>
-                    <ul class="md-warp-cont">
-                        <li>
-                            <a href="#">
-                                <img src="#" width="173" height="173" alt="" />            
-                                <span class="goods-title">【包邮】全棉包包秋衣秋裤啊</span>
-                            </a>
-                            <p class="price-box">
-                                <span class="hs-price"> <b>￥</b>
-                                    14111.75
-                                </span>
-                                <span class="del-price">59111.75元</span>
-                            </p>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="#" width="173" height="173" alt="" />            
-                                <span class="goods-title">【包邮】全棉包包秋衣秋裤啊</span>
-                            </a>
-                            <p class="price-box">
-                                <span class="hs-price"> <b>￥</b>
-                                    14111.75
-                                </span>
-                                <span class="del-price">59111.75元</span>
-                            </p>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="#" width="173" height="173" alt="" />            
-                                <span class="goods-title">【包邮】全棉包包秋衣秋裤啊</span>
-                            </a>
-                            <p class="price-box">
-                                <span class="hs-price">
-                                    <b>￥</b>
-                                    14111.75
-                                </span>
-                                <span class="del-price">59111.75元</span>
-                            </p>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="#" width="173" height="173" alt="" />            
-                                <span class="goods-title">【包邮】全棉包包秋衣秋裤啊</span>
-                            </a>
-                            <p class="price-box">
-                                <span class="hs-price">
-                                    <b>￥</b>
-                                    14111.75
-                                </span>
-                                <span class="del-price">59111.75元</span>
-                            </p>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="#" width="173" height="173" alt="" />            
-                                <span class="goods-title">【包邮】全棉包包秋衣秋裤啊</span>
-                            </a>
-                            <p class="price-box">
-                                <span class="hs-price">
-                                    <b>￥</b>
-                                    14111.75
-                                </span>
-                                <span class="del-price">59111.75元</span>
-                            </p>
-                        </li>                
-                        <li>
-                            <a href="#">
-                                <img src="#" width="173" height="173" alt="" />            
-                                <span class="goods-title">【包邮】全棉包包秋衣秋裤啊</span>
-                            </a>
-                            <p class="price-box">
-                                <span class="hs-price">
-                                    <b>￥</b>
-                                    14111.75
-                                </span>
-                                <span class="del-price">59111.75元</span>
-                            </p>
-                        </li>
+                    <ul class="J_clzn_goods md-warp-cont">
+                        <script id="T_clnz_goods" type="text/html">
+                            {{each clnz_goods as data}}
+                                <li>
+                                    <a href="{{data.link}}">
+                                        <img data-layzr="{{data.imgurl}}" src="static/src/img/blank.gif" width="173" height="173" alt="{{data.tit}}" />            
+                                        <span class="goods-title">{{data.tit}}</span>
+                                    </a>
+                                    <p class="price-box">
+                                        <span class="hs-price"> <b>￥</b>
+                                            {{data.zhs_price}}
+                                        </span>
+                                        <span class="del-price">{{data.price}}元</span>
+                                    </p>
+                                </li>
+                            {{/each}}
+                        </script>
                     </ul>
                 </div>
                 <div class="md-warp-cont-item">
