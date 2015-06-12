@@ -1,7 +1,6 @@
 //插件
 !function(){
     function Xslider($, window){
-        var $window = $(window);
         if (!$.fn.Xslider) {
             $.fn.Xslider = function (options) {  //选项卡、焦点图、事件触发加载图片
                 var settings = $.extend({
