@@ -9,6 +9,7 @@ seajs.config({
         "placeholder": "static/src/js/libs/jquery.placeholder",
         "template": "static/src/js/libs/template",
         "xslider":"static/src/js/jquery.xslider",
+        "goto":"static/src/js/jquery.goto",
         "menunav":"static/src/js/jquery.MenuNav",
         "Layzr":"static/src/js/libs/Layzr",
         "sea-debug":"static/src/js/libs/seajs/sea-debug"

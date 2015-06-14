@@ -2,7 +2,7 @@
 // * @Author: janmi
 // * @Date:   2015-04-21 23:42:34
 // * @Last Modified by:   anchen
-// * @Last Modified time: 2015-06-12 22:35:49
+// * @Last Modified time: 2015-06-14 17:21:34
 // * @Email 627943558@qq.com
 // */
 
@@ -133,4 +133,6 @@ define(function(require, exports, module) {
     });
     $(window).resize();
 
+    var goto = require('goto');
+    $('.J_goto').goto('href', true);
 });
