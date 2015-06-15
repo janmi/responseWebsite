@@ -177,5 +177,164 @@
             }
 
         ]
+    },
+    "floor_jpnz":{
+        "banner":[
+            {
+                "tit":"618珠宝大趴",
+                "imgurl":"/static/src/data/img/clnn2.jpg",
+                "link":"http://www.zhonghuasuan.com/"
+            },{
+                "tit":"女鞋618嗨不购",
+                "imgurl":"/static/src/data/img/clnn1.jpg",
+                "link":"http://www.zhonghuasuan.com/"
+            }
+        ],
+        "goods":[
+            {
+                "tit":"【包邮】 欧以纯男装学生休闲T恤衫夏季韩版潮修身男士短袖T恤",
+                "link":"http://detail.zhonghuasuan.com/240675.html",
+                "imgurl":"http://img.zhonghuasuan.com/mall/goods/2015/05/20/1648442336.jpg_350x350.jpg",
+                "zhs_price":"11.76",
+                "price":"49.00"
+            },{
+                "tit":"【包邮】 夏季新款潮男修身休闲裤薄款棉麻长裤男裤",
+                "link":"http://detail.zhonghuasuan.com/115835.html",
+                "imgurl":"http://img.zhonghuasuan.com/mall/goods/2015/06/07/1638095030.jpg_350x350.jpg",
+                "zhs_price":"34.83",
+                "price":"129.00"
+            },{
+                "tit":"【包邮】 卡依莱芙 预售新款大象印花T恤花色阔腿九分裤套装",
+                "link":"http://detail.zhonghuasuan.com/249664.html",
+                "imgurl":"http://img.zhonghuasuan.com/mall/goods/2015/06/09/1409045574.jpg_350x350.jpg",
+                "zhs_price":"69.50",
+                "price":"139.00"
+            },{
+                "tit":"【包邮】 【请拍2份】5双装盒装男袜夏季薄款",
+                "link":"http://detail.zhonghuasuan.com/245783.html",
+                "imgurl":"http://img.zhonghuasuan.com/mall/goods/2015/05/29/1828345461.jpg_350x350.jpg",
+                "zhs_price":"14.28",
+                "price":"47.60"
+            },{
+                "tit":"【包邮】 卡梵亚5双装男士纯棉透气短袜",
+                "link":"http://detail.zhonghuasuan.com/251944.html",
+                "imgurl":"http://img.zhonghuasuan.com/mall/goods/2015/06/10/1308464381.jpg_350x350.jpg",
+                "zhs_price":"15.00",
+                "price":"30.00"
+            },{
+                "tit":"【包邮】 【一站成名】手机下单 春夏新款休闲裤男士潮流韩版薄款纯色长中腰",
+                "link":"http://detail.zhonghuasuan.com/235193.html",
+                "imgurl":"http://img.zhonghuasuan.com/mall/goods/2015/05/11/1646078729.jpg_350x350.jpg",
+                "zhs_price":"10.27",
+                "price":"79.00"
+            }
+
+        ]
+    },
+    "floor_xzxb":{
+        "banner":[
+            {
+                "tit":"618珠宝大趴",
+                "imgurl":"/static/src/data/img/clnn2.jpg",
+                "link":"http://www.zhonghuasuan.com/"
+            },{
+                "tit":"女鞋618嗨不购",
+                "imgurl":"/static/src/data/img/clnn1.jpg",
+                "link":"http://www.zhonghuasuan.com/"
+            }
+        ],
+        "goods":[
+            {
+                "tit":"【包邮】 杰尼诗顿商务男士手提包",
+                "link":"http://detail.zhonghuasuan.com/195866.html",
+                "imgurl":"http://img.zhonghuasuan.com/mall/goods/2015/02/02/1242057449.jpg_350x350.jpg",
+                "zhs_price":"89.00",
+                "price":"178.00"
+            },{
+                "tit":"【包邮】 【套餐】黑色双肩包卡包",
+                "link":"http://detail.zhonghuasuan.com/247137.html",
+                "imgurl":"http://img.zhonghuasuan.com/mall/goods/2015/06/02/1018265528.jpg_350x350.jpg",
+                "zhs_price":"34.83",
+                "price":"129.00"
+            },{
+                "tit":"【包邮】 欧美时尚简约大方手机包休闲小跨包潮女单肩包",
+                "link":"http://detail.zhonghuasuan.com/242815.html",
+                "imgurl":"http://img.zhonghuasuan.com/mall/goods/2015/05/25/1259115495.jpg_350x350.jpg",
+                "zhs_price":"7.50",
+                "price":"25.00"
+            },{
+                "tit":"【包邮】 Tomubird 牛皮鳄鱼纹复古时尚女包",
+                "link":"http://detail.zhonghuasuan.com/253463.html",
+                "imgurl":"http://img.zhonghuasuan.com/mall/goods/2015/06/12/1732106223.jpg_350x350.jpg",
+                "zhs_price":"125.58",
+                "price":"299.00"
+            },{
+                "tit":"【包邮】 得凡希2015新款时尚潮流女包斜跨挎单肩手提大包",
+                "link":"http://detail.zhonghuasuan.com/237429.html",
+                "imgurl":"http://img.zhonghuasuan.com/mall/goods/2015/05/15/1059543289.jpg_350x350.jpg",
+                "zhs_price":"59.34",
+                "price":"129.00"
+            },{
+                "tit":"【包邮】 华诺大码2015春新款 甜美平底女鞋 正品牛皮",
+                "link":"http://detail.zhonghuasuan.com/210086.html",
+                "imgurl":"http://img.zhonghuasuan.com/mall/goods/2015/03/26/2152111915.jpg_350x350.jpg",
+                "zhs_price":"59.34",
+                "price":"138.00"
+            }
+
+        ]
+    },
+    "floor_sxps":{
+        "banner":[
+            {
+                "tit":"618珠宝大趴",
+                "imgurl":"/static/src/data/img/clnn2.jpg",
+                "link":"http://www.zhonghuasuan.com/"
+            },{
+                "tit":"女鞋618嗨不购",
+                "imgurl":"/static/src/data/img/clnn1.jpg",
+                "link":"http://www.zhonghuasuan.com/"
+            }
+        ],
+        "goods":[
+            {
+                "tit":"【包邮】 防辐射眼镜电脑镜 男潮女款上网",
+                "link":"http://detail.zhonghuasuan.com/176088.html",
+                "imgurl":"http://img.zhonghuasuan.com/mall/goods/2014/11/26/1535384229.jpg_350x350.jpg",
+                "zhs_price":"3.73",
+                "price":"24.90"
+            },{
+                "tit":"【包邮】 银手镯 纯银S999宝宝必备 送妈妈礼物 时尚手",
+                "link":"http://detail.zhonghuasuan.com/212310.html",
+                "imgurl":"http://img.zhonghuasuan.com/mall/goods/2015/03/31/1450342988.jpg_350x350.jpg",
+                "zhs_price":"7.50",
+                "price":"25.00"
+            },{
+                "tit":"【包邮】 欣莉雅925纯银项链炎夏必备适合送女友送闺蜜",
+                "link":"http://detail.zhonghuasuan.com/249305.html",
+                "imgurl":"http://img.zhonghuasuan.com/mall/goods/2015/06/05/1127564770.jpg_350x350.jpg",
+                "zhs_price":"9.66",
+                "price":"69.00"
+            },{
+                "tit":"【包邮】 正品香港金米欧时尚女士手表",
+                "link":"http://detail.zhonghuasuan.com/35517.html",
+                "imgurl":"http://img.zhonghuasuan.com/mall/goods/2013/11/01/1439495758.jpg_350x350.jpg",
+                "zhs_price":"35.20",
+                "price":"88.00"
+            },{
+                "tit":"【包邮】 诺琴超薄女表石英表时装表韩国潮流女学生真皮带时尚防",
+                "link":"http://detail.zhonghuasuan.com/251249.html",
+                "imgurl":"http://img.zhonghuasuan.com/mall/goods/2015/06/09/1314102049.jpg_350x350.jpg",
+                "zhs_price":"99.00",
+                "price":"198.00"
+            },{
+                "tit":"【包邮】 转运珠项链女绿玉髓吊坠饰品925纯银锁骨链",
+                "link":"http://detail.zhonghuasuan.com/253113.html",
+                "imgurl":"http://img.zhonghuasuan.com/mall/goods/2015/06/12/1145409130.jpg_350x350.jpg",
+                "zhs_price":"35.64",
+                "price":"198.00"
+            }
+
+        ]
     }
 }
