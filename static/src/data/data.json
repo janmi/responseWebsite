@@ -336,5 +336,58 @@
             }
 
         ]
+    },
+    "floor_sxps":{
+        "banner":[
+            {
+                "tit":"618珠宝大趴",
+                "imgurl":"/static/src/data/img/clnn2.jpg",
+                "link":"http://www.zhonghuasuan.com/"
+            },{
+                "tit":"女鞋618嗨不购",
+                "imgurl":"/static/src/data/img/clnn1.jpg",
+                "link":"http://www.zhonghuasuan.com/"
+            }
+        ],
+        "goods":[
+            {
+                "tit":"【包邮】 绿水丫丫 绿茶雨前高山茶龙井茶 超西湖龙井茶叶半斤",
+                "link":"http://detail.zhonghuasuan.com/250470.html",
+                "imgurl":"http://img.zhonghuasuan.com/mall/goods/2015/06/08/1242049659.jpg_350x350.jpg",
+                "zhs_price":"52.32",
+                "price":"109.00"
+            },{
+                "tit":"【包邮】 绿水丫丫 明前特级高山绿茶 超西湖龙井茶叶礼盒装",
+                "link":"http://detail.zhonghuasuan.com/251237.html",
+                "imgurl":"http://img.zhonghuasuan.com/mall/goods/2015/06/09/1302346209.jpg_350x350.jpg",
+                "zhs_price":"44.50",
+                "price":"89.00"
+            },{
+                "tit":"【包邮】 新疆和田红枣 汤粥枣2000克",
+                "link":"http://detail.zhonghuasuan.com/189543.html",
+                "imgurl":"http://img.zhonghuasuan.com/mall/goods/2015/01/08/1616461708.jpg_350x350.jpg",
+                "zhs_price":"36.00",
+                "price":"120.00"
+            },{
+                "tit":"【包邮】 【套餐】猴头菇饼干有糖和无糖各2斤 共发4斤",
+                "link":"http://detail.zhonghuasuan.com/247819.html",
+                "imgurl":"http://img.zhonghuasuan.com/mall/goods/2015/06/03/1026218029.jpg_350x350.jpg",
+                "zhs_price":"32.10",
+                "price":"107.00"
+            },{
+                "tit":"【包邮】 诺琴超薄女表石英表时装表韩国潮流女学生真皮带时尚防",
+                "link":"http://detail.zhonghuasuan.com/251249.html",
+                "imgurl":"http://img.zhonghuasuan.com/mall/goods/2015/06/09/1314102049.jpg_350x350.jpg",
+                "zhs_price":"99.00",
+                "price":"198.00"
+            },{
+                "tit":"【包邮】 转运珠项链女绿玉髓吊坠饰品925纯银锁骨链",
+                "link":"http://detail.zhonghuasuan.com/253113.html",
+                "imgurl":"http://img.zhonghuasuan.com/mall/goods/2015/06/12/1145409130.jpg_350x350.jpg",
+                "zhs_price":"35.64",
+                "price":"198.00"
+            }
+
+        ]
     }
 }
