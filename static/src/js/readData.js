@@ -10,7 +10,7 @@ define(function(require, exports, module) {
                 var self = this;
                 $.getJSON('static/src/data/data.json', function(data) {
                     self.tplLine(data);
-                    self.floorOne(data);
+                    self.floorT(data);
                     new Layzr();
                 });
             },  
@@ -42,16 +42,20 @@ define(function(require, exports, module) {
                 };
             },
             /* 渲染一楼 */
-            floorOne:function(ret){
-                var clnz_bn = ret.floor_clnz.banner;
-                var clnz_goods = ret.floor_clnz.goods;
-                var str_bn = template('T_clnz_bn', {'clzn_bn': clnz_bn});
-                var str_goods = template('T_clnz_goods', {'clnz_goods': clnz_goods});
-                $('.J_clzn_bn').html(str_bn);
-                $('.J_clzn_goods').html(str_goods);
-            },
-            floorTwo:function(ret){
+            floorT:function(ret){
+                var floorArr = ['clnz', 'jpnz', 'xzxb', 'sxps', 'mstc', 'smjd', 'jjry', 'zhsp', 'yryp', 'zjwj', 'ycxm'];
+                var j;
+                for ( j in ret) {
+                    for (var i = 0; i < floorArr.length; i++) {
+                        if (j == floorArr[i]) {
+                            var str_bn = template('T_bn_'+floorArr[i], {'bn' : ret[j].banner});
+                            var str_goods = template('T_goods_'+floorArr[i], {'goods': ret[j].goods});
 
+                            $('.J_bn_'+floorArr[i]).html(str_bn);
+                            $('.J_goods_'+floorArr[i]).html(str_goods);
+                        };  
+                    };
+                };  
             }
         }
     }().init();
