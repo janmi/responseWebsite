@@ -10,6 +10,7 @@ seajs.config({
         "template": "static/src/js/libs/template",
         "xslider":"static/src/js/jquery.xslider",
         "goto":"static/src/js/jquery.goto",
+        "highlight":"static/src/js/jquery.highlight",
         "menunav":"static/src/js/jquery.MenuNav",
         "Layzr":"static/src/js/libs/Layzr",
         "sea-debug":"static/src/js/libs/seajs/sea-debug"
@@ -24,5 +25,5 @@ seajs.config({
     preload: ['template', 'xslider', 'menunav', 'Layzr'],
 
     // 调试模式
-    debug: true
+    debug: false
 })

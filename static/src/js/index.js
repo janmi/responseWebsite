@@ -128,11 +128,18 @@ define(function(require, exports, module) {
         paly_index:2
     });
 
-    $(window).resize(function() {
-        $('#J_r_sidebar').height($(window).height()).animate({width:'40px'},900);
-    });
-    $(window).resize();
+    var side = function(){
+        $('#J_r_sidebar').height($(window).height()).animate({
+            width: '40px'
+        }, 900)
+    }; 
+    side();
+    $(window).resize(side);
+
 
     var goto = require('goto');
-    $('.J_goto').goto('href', true);
+    var highlight = require('highlight');
+
+    $('.J_goto').goto('href').highlight();
+
 });
