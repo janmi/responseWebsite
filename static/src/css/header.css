@@ -210,7 +210,6 @@ body {
   right: 0;
   z-index: 9999;
   width: 0px;
-  overflow: hidden;
   background-color: #333;
 }
 .ie6 .r-sidebar-md {
