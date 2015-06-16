@@ -139,6 +139,7 @@
                 }
 
                 if (settings.paly_index > 0 ) {
+                    console.log(settings.paly_index);
                     index = settings.paly_index-1;
                     slide();
                 }

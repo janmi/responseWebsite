@@ -278,14 +278,14 @@
                         <li><a href="#"><img class="loading" src="/static/src/img/small3.png" width="200" height="218" alt="" /></a></li>
                     </ul>
                     <div class="J_s_tab small-tab">
-                        <a href="javascript:;"></a>
+                        <a class="cur" href="javascript:;"></a>
                         <a href="javascript:;"></a>
                         <a href="javascript:;"></a>
                     </div>
                 </div>
                 <div class="J_n notice">
                     <div class="J_n_tab notice-tab">
-                        <a href="javascript:;">公告</a>   
+                        <a class="cur" href="javascript:;">公告</a>   
                         <a href="javascript:;">买家规则</a>   
                         <a href="javascript:;">商家规则</a>   
                     </div>
@@ -733,18 +733,18 @@
             </div>
             <div class="J_g_t_cont md-warp-cont-list">
                 <div class="md-warp-cont-item">
-                    <div class="J_ytfz_bn md-warp-bn">
-                        <script id="T_ytfz_bn" type="text/html">
-                            {{each ytfz_bn as data}}
+                    <div class="J_bn_ytfz md-warp-bn">
+                        <script id="T_bn_ytfz" type="text/html">
+                            {{each bn as data}}
                                 <a href="{{data.link}}" target="_blank">
                                     <img data-layzr="{{data.imgurl}}" src="static/src/img/blank.gif" alt="{{data.tit}}">
                                 </a>
                             {{/each}}
                         </script>
                     </div>
-                    <ul class="J_ytfz_goods md-warp-cont">
-                        <script id="T_ytfz_goods" type="text/html">
-                            {{each ytfz_goods as data}}
+                    <ul class="J_goods_ytfz md-warp-cont">
+                        <script id="T_goods_ytfz" type="text/html">
+                            {{each goods as data}}
                                 <li>
                                     <a href="{{data.link}}" target="_blank">
                                         <img data-layzr="{{data.imgurl}}" src="static/src/img/blank.gif" width="173" height="173" alt="{{data.tit}}" />            

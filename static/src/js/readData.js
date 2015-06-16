@@ -43,7 +43,7 @@ define(function(require, exports, module) {
             },
             /* 渲染一楼 */
             floorT:function(ret){
-                var floorArr = ['clnz', 'jpnz', 'xzxb', 'sxps', 'mstc', 'smjd', 'jjry', 'zhsp', 'yryp', 'zjwj', 'ycxm'];
+                var floorArr = ['clnz', 'jpnz', 'xzxb', 'sxps', 'mstc', 'smjd', 'jjry', 'zhsp', 'ytfz', 'yryp', 'zjwj', 'ycxm'];
                 var j;
                 for ( j in ret) {
                     for (var i = 0; i < floorArr.length; i++) {

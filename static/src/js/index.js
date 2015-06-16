@@ -47,7 +47,7 @@ define(function(require, exports, module) {
         load_type: "img",
         isCheckShow: false
     });
-        // min banner
+    // min banner
     $(".J_s_b").Xslider({
         content_box: '.J_s_p', 
         content_tag: 'li', 
@@ -129,7 +129,7 @@ define(function(require, exports, module) {
     });
 
     $(window).resize(function() {
-        $('#J_r_sidebar').height($(window).height());
+        $('#J_r_sidebar').height($(window).height()).animate({width:'40px'},900);
     });
     $(window).resize();
 

@@ -191,7 +191,8 @@ body{overflow-x: hidden;}
   top:0;
   right:0;
   z-index: 9999;
-  width:40px;
+  width:0px;
+  overflow:hidden;
   background-color: #333;
 }
 .ie6 .r-sidebar-md{
@@ -268,13 +269,13 @@ body{overflow-x: hidden;}
         padding:10px 0;
         width:40px;
         height:18px;
+        font-size: 14px;
         &:hover{
           background-color: #d11414;
           span{
             border-radius: 0;
             color:#fff;
             background-color: #d11414;
-            font-size:14px;
             box-shadow: none;
           }
         }
@@ -298,10 +299,11 @@ body{overflow-x: hidden;}
         border-radius: 10px;
         background-color: #fff;
         font-family: \5fae\8f6f\96c5\9ed1;
-        font-size:0px;
         color:#fff;
         text-align: center;
         box-shadow: 1px 1px 1px #888 inset;
+        color:transparent;
+        cursor:pointer;
       }
    } 
   }
@@ -331,7 +333,10 @@ body{overflow-x: hidden;}
           }
         }
 
-        .new-goods .goods-cont-item .md-warp-cont{ width: 800px;}
+        .new-goods .goods-cont-item{
+          width: 800px;
+           .md-warp-cont{ width: 800px;}
+        }
 
         .floor-md .md-warp-cont-list{width:800px;}
 
