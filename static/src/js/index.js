@@ -2,7 +2,7 @@
 // * @Author: janmi
 // * @Date:   2015-04-21 23:42:34
 // * @Last Modified by:   anchen
-// * @Last Modified time: 2015-06-14 17:21:34
+// * @Last Modified time: 2016-04-07 22:29:33
 // * @Email 627943558@qq.com
 // */
 
@@ -35,7 +35,7 @@ define(function(require, exports, module) {
     $('.J_menu').MenuNav();
     //banner
     $(".J_banner").Xslider({
-        effect: "fade",
+        effect: "none",
         auto: true,
         content_box: ".banner-cont",
         content_tag: '.banner-item', 

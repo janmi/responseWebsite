@@ -186,10 +186,6 @@
   height: 340px;
   overflow: hidden;
 }
-.banner-item-cur img {
-  -webkit-animation: scaleImg 2s linear forwards;
-          animation: scaleImg 2s linear forwards;
-}
 @-webkit-keyframes scaleImg {
   0% {
     -webkit-transform: scale(1.1);
