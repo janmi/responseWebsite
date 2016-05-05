@@ -12,7 +12,7 @@ seajs.config({
         "goto":"static/src/js/jquery.goto",
         "highlight":"static/src/js/jquery.highlight",
         "menunav":"static/src/js/jquery.MenuNav",
-        "Layzr":"static/src/js/libs/Layzr",
+        "Layzr":"static/src/js/libs/layzr",
         "sea-debug":"static/src/js/libs/seajs/sea-debug"
     },
 

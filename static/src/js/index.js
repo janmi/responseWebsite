@@ -2,15 +2,10 @@
 // * @Author: janmi
 // * @Date:   2015-04-21 23:42:34
 // * @Last Modified by:   anchen
-// * @Last Modified time: 2016-04-07 22:29:33
+// * @Last Modified time: 2016-05-05 17:55:50
 // * @Email 627943558@qq.com
 // */
 
-// var shs = (function(){
-//     var domain = location.host.replace(/(\w+\.)*(\w+\.com)/, '.$2');
-    
-// })();
- 
 define(function(require, exports, module) {
 
     var Xslider = require('xslider')($, window);
