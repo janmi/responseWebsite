@@ -1,6 +1,9 @@
 var seajsTimestamp = new Date().getTime();
 
 seajs.config({
+    /* 基础路径 */
+    base: "responseWebsite/",
+
     /* js调用别名配置 */
     alias: {
         "placeholder": "static/src/js/libs/jquery.placeholder",
