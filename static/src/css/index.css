@@ -6,10 +6,10 @@
   /*公共banner样式*/
 }
 .sprite {
-  background: url(/static/src/img/sprite.png) no-repeat;
+  background: url(static/src/img/sprite.png) no-repeat;
 }
 .loading {
-  background: url(/static/src/img/zw.gif) no-repeat center;
+  background: url(static/src/img/zw.gif) no-repeat center;
 }
 .header {
   margin: 0 auto;
